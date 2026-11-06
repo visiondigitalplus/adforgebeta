@@ -1,0 +1,3006 @@
+<!-- Generado por construir.py · 2026-11-06 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AdForge · Content &amp; Ads Studio · Visión Digital</title>
+<meta name="description" content="AdForge · Content & Ads Studio. Del briefing a las piezas listas para publicar: investigación de mercado, guiones, contenido y anuncios. Por Visión Digital.">
+<meta name="theme-color" content="#07080d">
+<style>
+/* ============================================================
+   Meta Ads Research OS · Visión Digital
+   ============================================================ */
+:root{
+  --bg:#07080d; --panel:#101320; --panel2:#0b0f19;
+  --line:#242b3d; --line2:#333d57;
+  --txt:#f4f7fd; --mut:#c2ccdf; --mut2:#9aa6c0;
+  --gold:#e3b23c; --gold2:#f7d97f;
+  --good:#34d399; --warn:#fbbf24; --bad:#f87171;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:
+    radial-gradient(900px 500px at 80% -10%, #2a2109 0%, transparent 60%),
+    radial-gradient(700px 460px at 5% 105%, #0d1828 0%, transparent 60%),
+    var(--bg);
+  color:var(--txt); font:18px/1.68 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased; min-height:100vh;
+}
+a{color:var(--gold2)}
+h1,h2,h3,h4{margin:0}
+button{font:inherit;cursor:pointer}
+
+/* ---------- topbar ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:#080b12ee;backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line)}
+.topbar .in{max-width:1240px;margin:0 auto;padding:12px 22px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.topbar img{width:132px;display:block;flex:none}
+.topnav{display:flex;gap:4px;margin-left:8px}
+.tabbtn{background:none;border:1px solid transparent;color:var(--mut);padding:8px 14px;border-radius:9px;
+  font-size:16.5px;font-weight:600;transition:.15s}
+.tabbtn:hover{background:#131a28;color:var(--txt)}
+.tabbtn.on{background:#1b1508;border-color:#4a3a17;color:var(--gold2)}
+.topright{margin-left:auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.chip{font-size:12.2px;letter-spacing:.13em;text-transform:uppercase;color:#cf9f42;border:1px solid #4a3a17;
+  background:#1a1508;padding:4px 10px;border-radius:99px;font-weight:700}
+.chip.neu{color:var(--mut);border-color:var(--line2);background:#12161f}
+
+.wrap{max-width:1240px;margin:0 auto;padding:26px 22px 80px}
+.row{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:18px}
+h1.page{font-size:31.7px;letter-spacing:-.7px}
+.sub{color:var(--mut);font-size:16.5px;margin-top:4px}
+
+/* ---------- buttons ---------- */
+.btn{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#231a04;border:none;
+  padding:10px 18px;border-radius:10px;font-weight:800;font-size:16.5px;box-shadow:0 4px 18px #e3b23c26}
+.btn:hover{filter:brightness(1.06)}
+.btn.ghost{background:#141a28;color:var(--txt);border:1px solid var(--line2);box-shadow:none;font-weight:600}
+.btn.ghost:hover{background:#1a2233}
+.btn.sm{padding:6px 12px;font-size:14.6px;border-radius:8px}
+.btn.danger{background:#241316;color:#f0a0a4;border:1px solid #4b2029;box-shadow:none}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+
+/* ---------- cards / grids ---------- */
+.card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
+  border-radius:var(--r);padding:20px 22px;margin-bottom:16px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.kpi{background:#0e131f;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.kpi .v{font-size:29.3px;font-weight:800;letter-spacing:-.8px;font-variant-numeric:tabular-nums}
+.kpi .l{font-size:12.2px;text-transform:uppercase;letter-spacing:.1em;color:#a9b6cd;margin-top:3px}
+
+/* ---------- forms ---------- */
+label{display:block;font-size:12.8px;text-transform:uppercase;letter-spacing:.1em;color:#a9b6cd;
+  font-weight:700;margin-bottom:5px}
+label .req{color:var(--gold)}
+input,select,textarea{width:100%;background:#0a0e18;border:1px solid var(--line2);color:var(--txt);
+  border-radius:9px;padding:10px 12px;font:inherit;font-size:16.5px;outline:none;transition:.15s}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px #e3b23c1f}
+textarea{resize:vertical;min-height:64px}
+.field{margin-bottom:14px}
+.hint{font-size:14.5px;color:#b9c5da;margin-top:6px;line-height:1.7}
+.blk{display:flex;gap:11px;align-items:center;margin-bottom:14px}
+.blk .n{width:24px;height:24px;border-radius:7px;background:#241d0b;color:var(--gold);
+  display:grid;place-items:center;font-size:14px;font-weight:800;flex:none}
+.blk h3{font-size:17.7px}
+.blk span{color:#a9b6cd;font-size:14px}
+
+.chk{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line2);background:#0c111c;
+  border-radius:9px;padding:8px 13px;font-size:15.9px;cursor:pointer;font-weight:600;color:var(--txt);
+  text-transform:none;letter-spacing:0;margin:0 6px 6px 0}
+.chk input{width:auto;margin:0}
+.chk.on{border-color:var(--gold);background:#1a1508}
+
+/* ---------- tables ---------- */
+.tw{overflow:auto;border:1px solid var(--line);border-radius:12px;background:#0b1019}
+table{border-collapse:collapse;width:100%;font-size:15.2px;min-width:760px}
+th{background:#101a2b;text-align:left;padding:9px 10px;color:var(--mut);font-weight:600;font-size:12.8px;
+  letter-spacing:.07em;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid var(--line)}
+td{padding:6px 8px;border-bottom:1px solid #16202f;vertical-align:middle}
+tr:last-child td{border-bottom:none}
+td input,td select{padding:6px 8px;font-size:15.2px;border-radius:6px}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- badges ---------- */
+.pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:12.8px;font-weight:800}
+.pA{background:#0d2019;color:#5ee9a8;border:1px solid #2f7a55}
+.pB{background:#1b1708;color:#f2cf6a;border:1px solid #8a7124}
+.pC{background:#1d1408;color:#eab270;border:1px solid #7a5a24}
+.pD{background:#1e0f11;color:#f0a0a4;border:1px solid #6b2f33}
+.tag{font-size:12.8px;padding:2px 9px;border-radius:99px;background:#182034;color:#a9b8d4;
+  border:1px solid var(--line2);display:inline-block;margin:2px 4px 2px 0}
+
+/* ---------- cliente cards ---------- */
+.cli{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
+  border-radius:var(--r);padding:16px 18px;cursor:pointer;transition:.15s}
+.cli:hover{border-color:var(--line2);background:#121828}
+.cli b{font-size:18.3px;display:block}
+.cli .m{font-size:14.6px;color:#a9b6cd;margin-top:3px}
+.cli .foot{display:flex;justify-content:space-between;align-items:center;margin-top:12px;
+  padding-top:10px;border-top:1px solid #1a2232;font-size:14px;color:#a9b6cd}
+
+/* ---------- pieces ---------- */
+.piece{background:linear-gradient(180deg,#111625,#0a0e18);border:1px solid var(--line);
+  border-radius:var(--r);margin-bottom:12px;overflow:hidden}
+.phead{display:flex;gap:14px;align-items:center;padding:14px 16px;cursor:pointer}
+.phead:hover{background:#0f1522}
+summary{list-style:none}
+summary::-webkit-details-marker{display:none}
+details[open] .phead{border-bottom:1px solid #171d2c}
+.ic{width:54px;height:54px;border-radius:50%;flex:none;display:grid;place-items:center;font-size:20.7px;
+  font-weight:800;letter-spacing:-.5px;border:2px solid}
+.ic.A{border-color:#2f7a55;background:#0d2019;color:#5ee9a8}
+.ic.B{border-color:#8a7124;background:#1b1708;color:#f2cf6a}
+.ic.C{border-color:#7a5a24;background:#1d1408;color:#eab270}
+.ic.D{border-color:#6b2f33;background:#1e0f11;color:#f0a0a4}
+.ptitle{flex:1;min-width:0}
+.ptitle b{display:block;font-size:17.7px}
+.ptitle .m{font-size:14px;color:#a9b6cd;margin-top:3px}
+.pbody{padding:0 16px 16px}
+.hook{background:#0a0e18;border:1px dashed var(--line2);border-radius:10px;padding:9px 12px;margin:7px 0;
+  font-size:16.5px;color:#e2e9f7}
+.hook b{display:block;font-size:11.6px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:3px}
+.kit{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+@media(max-width:860px){.kit{grid-template-columns:1fr}}
+.kitbox{background:#0a0e18;border:1px solid #1b2233;border-radius:10px;padding:10px 12px;font-size:15.2px;color:#dfe6f3}
+.kitbox>b{display:block;font-size:11.6px;letter-spacing:.12em;text-transform:uppercase;color:#7fb7d8;margin-bottom:5px}
+.kitbox.full{grid-column:1/-1}
+.evi{background:#0d1420;border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:9px 13px;
+  font-size:14.6px;color:#c6d2e6;margin-top:11px}
+.icbreak{margin-top:11px}
+.icrow{display:grid;grid-template-columns:170px 1fr 36px;gap:8px;align-items:center;margin:4px 0;font-size:14px;color:#a9b6cd}
+.icrow b{text-align:right;color:var(--txt);font-variant-numeric:tabular-nums}
+.bar{height:5px;border-radius:99px;background:#1a2133;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2))}
+.pen{color:#f0a0a4;font-size:13.4px;margin-top:2px}
+
+/* ---------- misc ---------- */
+.note{border-left:3px solid var(--gold);background:#171206;padding:11px 15px;border-radius:0 11px 11px 0;
+  font-size:15.9px;color:#e8d9b6;margin:14px 0}
+.note.bad{border-color:#b4472f;background:#1e0f0c;color:#f3c9bd}
+.empty{border:1px dashed var(--line2);border-radius:var(--r);padding:36px 20px;text-align:center;color:var(--mut)}
+.empty b{display:block;color:var(--txt);font-size:18.3px;margin-bottom:6px}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:20px;flex-wrap:wrap}
+.tabs .tabbtn{border-radius:9px 9px 0 0}
+.steps{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.steps .s{font-size:14px;color:#a9b6cd;border:1px solid var(--line);border-radius:99px;padding:4px 11px}
+.steps .s.on{color:var(--gold2);border-color:#4a3a17;background:#1a1508}
+.steps .s.done{color:var(--good);border-color:#2f6b4a}
+
+.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,18px);background:var(--gold);color:#1c1503;
+  padding:10px 20px;border-radius:99px;font-weight:800;font-size:15.9px;opacity:0;transition:.25s;
+  pointer-events:none;z-index:200}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.modal{position:fixed;inset:0;background:#000b;z-index:300;display:flex;align-items:center;
+  justify-content:center;padding:20px}
+.modal .in{background:#0e1320;border:1px solid var(--line2);border-radius:14px;padding:16px;
+  max-width:760px;width:100%;max-height:88vh;overflow:auto}
+.modal textarea{height:340px;font:12px ui-monospace,monospace}
+
+/* ---------- print (entrega en PDF) ---------- */
+@media print{
+  body{background:#fff;color:#111}
+  .topbar,.no-print,.toast{display:none !important}
+  .wrap{max-width:none;padding:0}
+  .card,.piece,.kpi{break-inside:avoid;background:#fff;border-color:#ddd;color:#111}
+  .hook,.kitbox,.evi,.note{background:#f7f5ef;color:#111;border-color:#ddd}
+  .ptitle b,.kitbox,.evi{color:#111}
+  .ic{border-width:2px}
+}
+
+/* ---------- pipeline de investigación ---------- */
+.stage{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid #171d2c;
+  opacity:.35;transition:.3s}
+.stage:last-of-type{border-bottom:none}
+.stage.on{opacity:1}
+.stage.done{opacity:.6}
+.stage .dot{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);flex:none;margin-top:2px;
+  display:grid;place-items:center;font-size:12.8px;color:#a9b6cd;font-weight:700}
+.stage.done .dot{border-color:#2f6b4a;color:var(--good)}
+.stage.on .dot{border-color:var(--gold);color:var(--gold);animation:vdpulse 1.1s infinite}
+@keyframes vdpulse{50%{box-shadow:0 0 0 6px #e3b23c1a}}
+.stage b{font-size:16.5px;display:block}
+.stage span{font-size:14.6px;color:#a9b6cd}
+
+/* ---------- flujo guiado ---------- */
+.stepper{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:16px 0 4px}
+.paso{display:flex;align-items:center;gap:7px;padding:6px 11px 6px 7px;border-radius:999px;
+  border:1px solid #232b3d;background:#0b0e15;cursor:pointer;transition:.2s}
+.paso:hover{border-color:#3a4560}
+.paso .num{width:19px;height:19px;border-radius:50%;display:grid;place-items:center;
+  font-size:12.8px;font-weight:700;background:#1a2132;color:#8d99b5;flex:none}
+.paso .lbl{font-size:14.6px;color:#9aa6c0;letter-spacing:.01em}
+.paso.actual{border-color:#e3b23c;background:#171307}
+.paso.actual .num{background:#e3b23c;color:#0b0e14}
+.paso.actual .lbl{color:#f2d78a;font-weight:600}
+.paso.hecho{border-color:#24402f;background:#0a1410}
+.paso.hecho .num{background:#2f6b4a;color:#d9f5e5}
+.paso.hecho .lbl{color:#7fbfa0}
+.flecha{color:#2a3247;font-size:13.4px}
+.etiqueta-camino{font-size:12.8px;letter-spacing:.09em;text-transform:uppercase;color:#e3b23c;margin-bottom:8px;font-weight:600}
+.pasos-lista{margin:0;padding-left:20px;font-size:15.2px;color:#c3ccdd;line-height:1.85}
+.pasos-lista li{padding-left:2px}
+.pasos-lista b{color:#eef2fa}
+
+/* ---------- pieza desplegable ---------- */
+.phead{cursor:pointer;user-select:none}
+.phead:hover{background:#131a28}
+.phead .abrir{display:inline-block;margin-top:8px;font-size:14.6px;color:var(--gold2);font-weight:600}
+.phead .abrir .f{display:inline-block;transition:.2s;margin-left:4px}
+details.piece[open] .phead .abrir .f{transform:rotate(180deg)}
+details.piece{border-left:3px solid transparent;transition:.2s}
+details.piece[open]{border-left-color:var(--gold)}
+
+/* ---------- impresión: todo abierto y legible ---------- */
+@media print{
+  .stepper,.tabs,.no-print,.topbar{display:none !important}
+  body{background:#fff !important;color:#111 !important;font-size:11.5pt}
+  .card{border:1px solid #ccc !important;background:#fff !important;break-inside:avoid}
+  .piece{break-inside:avoid;page-break-inside:avoid}
+  .hook,.kitbox,.evi{color:#111 !important;font-size:10.5pt !important}
+  .kitbox b,.hook b{color:#7a5b00 !important}
+  table th{color:#111 !important}
+  .ic{color:#111 !important}
+}
+
+/* ---------- pasos del panel de investigación ---------- */
+.paso-item{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid #1d2436}
+.paso-num{flex:none;width:28px;height:28px;border-radius:50%;border:1px solid var(--gold);color:var(--gold);
+  display:grid;place-items:center;font-size:15.9px;font-weight:700;background:#171307}
+.paso-tit{display:block;font-size:18.3px;margin-bottom:4px}
+.hint-sm{font-size:15.9px;color:#b9c5da;line-height:1.7}
+#jsonIA{background:#0a0e18;border:1px solid #2b3a52;border-radius:10px;color:#eef2fa;padding:12px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:15.2px;line-height:1.6}
+#jsonIA:focus{outline:none;border-color:var(--gold)}
+
+/* ---------- bloques retráctiles ---------- */
+.resumen{border:1px solid var(--line);border-radius:12px;background:#0c1119;margin:0 0 18px}
+.resumen>summary{cursor:pointer;padding:13px 16px;font-size:16.5px;color:#c9d3e6;font-weight:600;
+  list-style:none;display:flex;align-items:center;gap:8px}
+.resumen>summary::-webkit-details-marker{display:none}
+.resumen>summary .f{margin-left:auto;transition:.2s;color:var(--gold2)}
+.resumen[open]>summary .f{transform:rotate(180deg)}
+.resumen[open]>summary{border-bottom:1px solid var(--line)}
+.resumen>*:not(summary){padding-left:16px;padding-right:16px}
+
+.mini{background:none;border:1px solid transparent;color:#8d99b5;font-size:15.9px;padding:2px 5px;
+  border-radius:6px;line-height:1}
+.mini:hover{background:#1b2233;border-color:var(--line2);color:#e6ecf8}
+
+/* ---------- control de tamaño ---------- */
+.zoomctl{display:flex;align-items:center;gap:6px;border:1px solid var(--line2);border-radius:99px;
+  padding:3px 5px;background:#0e131f}
+.zoomctl span{font-size:12px;color:#b9c5da;min-width:74px;text-align:center}
+.zb{background:none;border:none;color:var(--gold2);font-size:14px;font-weight:800;padding:2px 8px;
+  border-radius:99px;line-height:1.2}
+.zb:hover{background:#1b2233}
+@media print{ .zoomctl{display:none !important} body{zoom:1 !important} }
+
+/* ---------- guion completo ---------- */
+.guionmeta{display:flex;gap:7px;margin:2px 0 12px;flex-wrap:wrap}
+.guiontabla{display:flex;flex-direction:column;gap:2px;margin:0 0 14px}
+.gbloque{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:11px 0;border-bottom:1px solid #1a2233}
+.gbloque:last-child{border-bottom:none}
+.gt b{display:block;color:var(--gold2);font-size:13.5px;font-variant-numeric:tabular-nums}
+.gt span{display:block;color:#a9b6cd;font-size:12.5px;margin-top:2px}
+.gc div{font-size:14.5px;color:#e8edf8;line-height:1.6;margin-bottom:6px}
+.gc div:last-child{margin-bottom:0}
+.gc em{display:block;font-style:normal;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:#7fb7d8;margin-bottom:2px;font-weight:700}
+.guioncols{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding-top:12px;border-top:1px solid #1a2233}
+.gtitle{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px}
+.guioncols ul{margin:0;padding-left:18px;font-size:13.5px;color:#cdd7e8;line-height:1.7}
+.guioncols ul.evitar li{color:#f0b0b4}
+@media(max-width:700px){.guioncols{grid-template-columns:1fr}.gbloque{grid-template-columns:1fr;gap:4px}}
+
+</style>
+</head>
+<body>
+
+<div class="topbar no-print">
+  <div class="in">
+    <img id="logo" alt="Visión Digital">
+    <nav class="topnav">
+      <button class="tabbtn on" data-nav="clientes" data-act="home">Clientes</button>
+    </nav>
+    <div class="topright">
+      <span class="chip">AdForge</span>
+      <span class="chip neu">Datos locales</span>
+      <button class="tabbtn" data-act="guia" id="btnGuia">Guía</button>
+      <div class="zoomctl no-print">
+        <button class="zb" data-act="zoomMenos" title="Letra más pequeña">A−</button>
+        <span id="zoomNivel">Normal</span>
+        <button class="zb" data-act="zoomMas" title="Letra más grande">A+</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="warn" class="no-print" style="display:none;background:#1e0f0c;border-bottom:1px solid #4b2029;color:#f3c9bd;padding:10px 22px;font-size:13px;text-align:center">
+  Este navegador no permite guardar datos (modo incógnito o vista previa). Puedes trabajar, pero exporta la base antes de cerrar.
+</div>
+
+<div class="wrap">
+  <div id="app"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* Logo Visión Digital incrustado (data URI) — así la app funciona sin internet y sin carpetas */
+const VD_LOGO = 'data:image/webp;base64,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';
+
+</script>
+<script>
+/* ============================================================
+   Diccionario creativo: ángulos, arquetipos, formatos, guiones.
+   Fuente: docs/07. Si cambias aquí, cambia el diccionario también.
+   ============================================================ */
+
+const VD_ANGULOS = [
+  'Resultado rápido','Evitar dolor o error','Curiosidad / misterio','Prueba social','Contra-narrativa',
+  'Autoridad','Antes/Después implícito','Costo de la inacción','Precio / valor','Identidad',
+  'Historia personal','Demostración pura','Objeción directa','Comparativa','Miedo a perder',
+  'Pertenencia','Estatus','Micro-especificidad','Oferta / urgencia'
+];
+
+const VD_FORMATOS = ['Video UGC','Video demo','Testimonio','Carrusel','Estático'];
+
+const VD_CONCIENCIA = [
+  '1 · Inconsciente','2 · Consciente del problema','3 · Consciente de la solución',
+  '4 · Consciente del producto','5 · Listo para comprar'
+];
+
+const VD_ARQ = {
+  contraintuitivo: t => `Deja de hacer lo de siempre. Es la causa real de esto: ${t.dolor}.`,
+  directo:        t => `Si te está pasando esto, es para ti: ${t.dolor}.`,
+  misterio:       t => `Nadie te dice esto sobre ${t.nicho}.`,
+  antesdespues:   t => `Hace 30 días estaba así. Hoy buscaba esto: ${t.deseo}.`,
+  prueba:         t => `+300 personas ya empezaron. Y todas querían lo mismo: ${t.deseo}.`,
+  autoridad:      t => `Lo que los especialistas dicen de ${t.nicho} y casi nadie aplica.`,
+  costo:          t => `Cada mes que pasa esto sale más caro. Y el motivo es este: ${t.dolor}.`,
+  contra:         t => `Las soluciones típicas para ${t.nicho} no funcionan. Te explico por qué.`,
+  demo:           t => `Mira esto en 20 segundos: ${t.meca}.`,
+  historia:       t => `Yo también empecé así: ${t.dolor}. Hoy busco esto: ${t.deseo}.`,
+  espejo:         t => `¿Por qué sigue pasando esto? La respuesta está aquí: ${t.dolor}.`,
+  micro:          t => `El error del segundo 4 que arruina ${t.nicho}.`,
+  curiosidad:     t => `Esto es lo que nadie te muestra: ${t.dolor}.`
+};
+
+/* Plan del lote: [ángulo, formato, conciencia, arquetipo1, arquetipo2, perfil, rangos de evidencia] */
+const VD_PLAN = [
+  {a:'Identidad',f:'Video UGC',c:'3 · Consciente de la solución',q1:'historia',q2:'espejo',tier:'A',ev:[98,100],es:[94,100],eo:[92,99],en:[94,100]},
+  {a:'Costo de la inacción',f:'Video UGC',c:'2 · Consciente del problema',q1:'costo',q2:'micro',tier:'A',ev:[96,100],es:[90,98],eo:[88,96],en:[92,99]},
+  {a:'Prueba social',f:'Testimonio',c:'4 · Consciente del producto',q1:'prueba',q2:'antesdespues',tier:'A',ev:[95,100],es:[88,97],eo:[86,95],en:[90,98]},
+  {a:'Demostración pura',f:'Video demo',c:'4 · Consciente del producto',q1:'demo',q2:'micro',tier:'A',ev:[94,100],es:[86,96],eo:[85,94],en:[88,97]},
+  {a:'Objeción directa',f:'Estático',c:'4 · Consciente del producto',q1:'espejo',q2:'directo',tier:'B',ev:[72,86],es:[38,58],eo:[64,84],en:[76,90]},
+  {a:'Curiosidad / misterio',f:'Carrusel',c:'3 · Consciente de la solución',q1:'misterio',q2:'curiosidad',tier:'B',ev:[70,84],es:[36,56],eo:[62,82],en:[74,88]},
+  {a:'Contra-narrativa',f:'Video UGC',c:'3 · Consciente de la solución',q1:'contra',q2:'contraintuitivo',tier:'C',ev:[42,60],es:[10,30],eo:[56,76],en:[58,78]},
+  {a:'Resultado rápido',f:'Carrusel',c:'2 · Consciente del problema',q1:'antesdespues',q2:'curiosidad',tier:'B',ev:[68,82],es:[34,52],eo:[60,80],en:[72,86]},
+  {a:'Objeción directa',f:'Video UGC',c:'4 · Consciente del producto',q1:'espejo',q2:'directo',tier:'B',ev:[66,80],es:[32,50],eo:[58,78],en:[70,85]},
+  {a:'Autoridad',f:'Carrusel',c:'3 · Consciente de la solución',q1:'autoridad',q2:'contra',tier:'B',ev:[64,80],es:[30,48],eo:[56,76],en:[68,84]},
+  {a:'Curiosidad / misterio',f:'Estático',c:'1 · Inconsciente',q1:'misterio',q2:'micro',tier:'C',ev:[50,66],es:[20,38],eo:[52,72],en:[62,80]},
+  {a:'Historia personal',f:'Video UGC',c:'1 · Inconsciente',q1:'historia',q2:'antesdespues',tier:'C',ev:[48,64],es:[18,36],eo:[50,70],en:[60,78]},
+  {a:'Precio / valor',f:'Estático',c:'5 · Listo para comprar',q1:'directo',q2:'prueba',tier:'C',ev:[46,62],es:[16,34],eo:[48,68],en:[58,76]},
+  {a:'Micro-especificidad',f:'Video UGC',c:'3 · Consciente de la solución',q1:'micro',q2:'curiosidad',tier:'D',ev:[34,52],es:[10,26],eo:[42,62],en:[52,70]}
+];
+
+const VD_CTAS = {
+  'Ventas':['Compra hoy y recibe el bonus sin costo','Ver precios y garantía'],
+  'Prospectos':['Reserva tu diagnóstico sin costo','Descarga la guía completa'],
+  'Mensajes':['Escríbenos "QUIERO" y te paso el plan','Manda un mensaje y te digo si aplica a tu caso'],
+  'Tráfico':['Mira la comparación completa','Lee el desglose paso a paso'],
+  'Interacción':['Comenta "GUÍA" y te la envío','Guarda esto para cuando lo necesites'],
+  'Reconocimiento':['Conoce cómo trabajamos','Sigue para ver la siguiente fase']
+};
+
+const VD_IMG_ARTE = [
+  'fotografía documental realista, sin retoque evidente',
+  'estilo editorial limpio, fondo neutro con sombra suave',
+  'plano publicitario en contexto real de uso',
+  'composición minimalista con mucho aire y un solo sujeto'
+];
+const VD_IMG_LUZ = ['luz natural de ventana','luz suave de estudio con rebote','luz cálida de tarde, contraste bajo','luz lateral dramática pero amable'];
+const VD_IMG_PAL = ['paleta neutra con un acento dorado','tonos tierra y beige','paleta fría con acento cálido','blancos cálidos y sombras profundas'];
+
+function vdTokens(exp){
+  const b = exp.brief || {};
+  return {
+    nicho: b.subnicho || b.producto || 'tu categoría',
+    producto: b.producto || 'tu producto',
+    dolor: b.dolor || b.avatar || 'tu problema',
+    deseo: b.deseo || b.promesa || 'el resultado que buscas',
+    meca: b.mecanismo || 'nuestro método',
+    promesa: b.promesa || 'el resultado que prometes',
+    pais: b.pais || 'tu país',
+    precio: b.precio || 'el precio',
+    avatar: b.avatar || 'tu cliente'
+  };
+}
+
+function vdGuion(formato, t, ctas){
+  if(formato==='Video demo') return [
+    `0-2 s · RESULTADO: el "después" en pantalla, sin explicación todavía.`,
+    `2-6 s · PROBLEMA: "${t.dolor}" dicho en las palabras del cliente.`,
+    `6-14 s · DEMOSTRACIÓN: ${t.meca} paso a paso, con las manos y el producto en cuadro.`,
+    `14-20 s · PRUEBA: dato o mini-testimonio que confirma lo que se acaba de ver.`,
+    `20-28 s · CTA: "${ctas[0]}" + oferta y garantía en pantalla.`
+  ];
+  if(formato==='Testimonio') return [
+    `0-3 s · GANCHO: la frase más fuerte del testimonio, a cámara, sin introducción.`,
+    `3-8 s · CONTEXTO: quién es y cómo estaba antes ("${t.dolor}").`,
+    `8-14 s · PUNTO DE GIRO: qué probó y por qué desconfiaba (objeción real).`,
+    `14-20 s · RESULTADO: qué cambió, con detalle concreto y medible.`,
+    `20-26 s · RECOMENDACIÓN: a quién se lo diría y por qué.`,
+    `26-32 s · CTA: "${ctas[0]}".`
+  ];
+  if(formato==='Carrusel') return [
+    `Slide 1 · Portada-gancho: titular de máximo 7 palabras, una sola idea.`,
+    `Slide 2 · Síntoma: cómo se siente hoy "${t.dolor}" (escena concreta).`,
+    `Slide 3 · Por qué lo típico falla: la objeción en palabras del cliente.`,
+    `Slide 4 · Mecanismo: ${t.meca} en 3 pasos numerados.`,
+    `Slide 5 · Prueba: resultado, dato o testimonio (una sola prueba, grande).`,
+    `Slide 6 · Oferta: ${t.promesa}.`,
+    `Slide 7 · CTA: "${ctas[0]}" + garantía.`
+  ];
+  if(formato==='Estático') return [
+    `Titular (máx. 7 palabras): el gancho completo, sin adorno.`,
+    `Subtítulo de apoyo: la promesa con plazo ("${t.promesa}").`,
+    `Prueba en una línea: dato, cifra o número de clientes.`,
+    `CTA sobre la imagen y CTA en el copy: el mismo verbo, no dos distintos.`,
+    `Dirección de arte: un solo sujeto, contraste alto, legible en miniatura.`
+  ];
+  return [
+    `0-3 s · GANCHO: primera frase a cámara, movimiento desde el frame 1.`,
+    `3-8 s · PROMESA: qué cambia y en cuánto tiempo ("${t.promesa}").`,
+    `8-15 s · MECANISMO: ${t.meca} en 3 pasos, sin jerga.`,
+    `15-22 s · PRUEBA + OBJECIÓN: se derriba la objeción principal con evidencia real.`,
+    `22-30 s · CTA: "${ctas[0]}" + cierre con la oferta.`
+  ];
+}
+
+function vdPromptImg(formato, t, i){
+  const ratio = (formato==='Estático'||formato==='Carrusel') ? '4:5' : '9:16';
+  const sujeto = formato==='Testimonio'
+    ? `persona real del público objetivo (${t.avatar.slice(0,70)}) en su entorno cotidiano`
+    : formato==='Video demo'
+      ? `manos usando ${t.producto} en primer plano, movimiento real`
+      : `persona del público objetivo (${t.avatar.slice(0,70)}) en una escena reconocible de su día`;
+  return `${VD_IMG_ARTE[i%VD_IMG_ARTE.length]}: ${sujeto}, ${VD_IMG_LUZ[i%VD_IMG_LUZ.length]}, ${VD_IMG_PAL[i%VD_IMG_PAL.length]}, plano ${formato==='Carrusel'?'medio vertical':'medio'}, formato ${ratio}. Negativos: sin texto, sin logos, sin marcas de agua, sin manos deformes, sin piel plástica.`;
+}
+
+function vdPromptVid(formato, t){
+  return `Escena 1 (0-3 s): ${formato==='Video demo'?'resultado ya visible, cámara en mano, sin trípode':'rostro real mirando a cámara, gesto genuino, movimiento desde el primer frame'}. Escena 2 (3-8 s): contexto del problema, plano medio, luz natural. Escena 3 (8-15 s): ${t.meca} en 3 cortes de 1,5 s con subtítulos quemados. Cierre: producto + CTA en pantalla. Audio: voz real, sin locución publicitaria.`;
+}
+
+function vdCompliance(exp){
+  const b = exp.brief || {};
+  const txt = `${b.producto||''} ${b.subnicho||''} ${b.promesa||''} ${b.mecanismo||''} ${b.restricciones||''}`.toLowerCase();
+  if(/(salud|médic|medic|peso|adelgaz|dieta|dolor|enfermedad|cura|terapia|clínic|suplemento|estétic|ansiedad|dérmic)/.test(txt))
+    return {nivel:'Alto', pen:6, nota:'Categoría salud: sin promesas de curación, sin resultados garantizados y sin antes/después explícito. Evita atributos personales del tipo "¿tienes sobrepeso?".'};
+  if(/(dinero|finanz|inversión|inversion|crédito|credito|préstamo|prestamo|ganar|cripto|trading|forex|rentabilidad|ingresos)/.test(txt))
+    return {nivel:'Alto', pen:6, nota:'Categoría financiera: prohibido prometer ingresos o rendimientos garantizados. Usa rangos y agrega disclaimer.'};
+  if((b.restricciones||'').trim())
+    return {nivel:'Medio', pen:2, nota:'Hay restricciones declaradas en el briefing: revísalas antes de producir.'};
+  return {nivel:'Bajo', pen:0, nota:'Sin señales de categoría especial. Verifica igualmente las políticas de Meta antes de publicar.'};
+}
+
+
+/* ============================================================
+   GUION COMPLETO por formato
+   Cada bloque: tiempo · qué se ve · qué se dice · qué texto va
+   ============================================================ */
+function vdGuionCompleto(formato, t, ctas, pieza){
+  const g1 = (pieza && pieza.ganchos && pieza.ganchos[0]) || '';
+  const g2 = (pieza && pieza.ganchos && pieza.ganchos[1]) || '';
+
+  const base = {
+    plano: 'Celular en vertical 9:16, a la altura de los ojos, a un brazo de distancia.',
+    luz: 'Luz de ventana o lámpara de frente. Nunca de espaldas.',
+    audio: 'Micrófono de corbata o el del celular a 30 cm. Sin música de fondo en los primeros 3 segundos.',
+    texto: 'Subtítulos quemados, tamaño grande, en la mitad inferior de la pantalla.'
+  };
+
+  if(formato === 'Video demo') return {
+    duracion: '25–35 s', estructura: 'Demostración sin rodeos',
+    bloques: [
+      { t:'0–2 s', nombre:'Resultado primero',
+        ve:'El "después" ya funcionando. Manos y producto en cuadro, nada de logos.',
+        dice:`«${t.promesa}»`,
+        texto:'Texto en pantalla de 4 palabras máximo, arriba y centrado.' },
+      { t:'2–6 s', nombre:'El problema en palabras del cliente',
+        ve:'Plano del mismo escenario, pero en el "antes". Corte seco, sin transición.',
+        dice:`«${t.dolor}»`,
+        texto:'Nada. Se deja respirar la imagen.' },
+      { t:'6–16 s', nombre:'El mecanismo, paso a paso',
+        ve:`${t.meca}, grabado de cerca. Tres cortes, uno por paso. Cada paso en pantalla.`,
+        dice:'Explicas qué haces y por qué, sin tecnicismos: "primero…, después…, por último…".',
+        texto:'Paso 1 · Paso 2 · Paso 3, numerados en el borde superior.' },
+      { t:'16–22 s', nombre:'La prueba',
+        ve:'El resultado medible: número, captura, antes/después lado a lado.',
+        dice:'Un dato concreto. Un número vale más que un adjetivo.',
+        texto:'El número, grande, en el centro.' },
+      { t:'22–30 s', nombre:'CTA',
+        ve:'Vuelta al plano inicial, ahora con el producto en la mano.',
+        dice:`«${ctas[0]}»`,
+        texto:'CTA + qué pasa al pulsar. Sin letra pequeña.' }
+    ],
+    produccion:[base.plano, base.luz, base.audio, base.texto,
+      'Graba el mecanismo 3 veces y elige la toma más limpia: la imperfección se nota.'],
+    errores:['No empieces presentándote.', 'No pongas música épica: distrae del mecanismo.',
+      'No cortes antes de que se entienda el resultado.']
+  };
+
+  if(formato === 'Testimonio') return {
+    duracion: '30–40 s', estructura: 'Testimonio real, sin guion leído',
+    bloques: [
+      { t:'0–3 s', nombre:'La frase más fuerte',
+        ve:'Cliente a cámara, plano medio, mirando al lente. Empieza a media frase.',
+        dice:`La frase más contundente de su testimonio. Ejemplo: «${t.dolor}» ya no es mi problema.`,
+        texto:'Cita literal entre comillas, encima del sujeto.' },
+      { t:'3–9 s', nombre:'Quién es y cómo estaba',
+        ve:'B-roll: su negocio, su casa, su rutina. Sirve para que el público se reconozca.',
+        dice:'Nombre, ciudad y en qué situación estaba antes.',
+        texto:'Nombre · ciudad · ocupación.' },
+      { t:'9–15 s', nombre:'La desconfianza',
+        ve:'Vuelta al plano a cámara. Aquí no hay b-roll: la cara sostiene la credibilidad.',
+        dice:'Qué le hizo dudar antes de comprar. Que lo diga él, no tú.',
+        texto:'Nada durante 2 s: deja que la cara hable.' },
+      { t:'15–24 s', nombre:'El resultado concreto',
+        ve:'La prueba en pantalla mientras habla: mensaje, número, foto del antes y el después.',
+        dice:'Qué cambió y en cuánto tiempo. Con números si existen.',
+        texto:'El dato, destacado.' },
+      { t:'24–31 s', nombre:'A quién se lo recomienda',
+        ve:'Plano abierto con el cliente en su entorno.',
+        dice:'«Se lo recomiendo a quien…» — esto segmenta solo.',
+        texto:'Nada.' },
+      { t:'31–36 s', nombre:'CTA',
+        ve:'Cierre en el producto o la marca.',
+        dice:`«${ctas[0]}»`,
+        texto:'CTA sobre banda de color.' }
+    ],
+    produccion:[base.plano, base.luz, base.audio, base.texto,
+      'No le des el guion al cliente: hazle preguntas y corta. El testimonio leído no vende.'],
+    errores:['No pongas al dueño hablando por el cliente.', 'No exageres el resultado: se nota.',
+      'No ocultes que es un cliente real.']
+  };
+
+  if(formato === 'Carrusel') return {
+    duracion: '5 slides', estructura: 'Historia en 5 pasos',
+    bloques: [
+      { t:'Slide 1', nombre:'Portada-gancho',
+        ve:'Imagen fuerte y titular grande. Debe entenderse en 1 segundo sin deslizar.',
+        dice:g1,
+        texto:'Máximo 7 palabras. Sin logo en el centro.' },
+      { t:'Slide 2', nombre:'El síntoma',
+        ve:'Escena concreta del dolor, no un icono.',
+        dice:`«${t.dolor}»`,
+        texto:'Una frase, en primera persona.' },
+      { t:'Slide 3', nombre:'Por qué lo típico falla',
+        ve:'Comparativa visual simple: lo normal tachado.',
+        dice:'La objeción en palabras del cliente, y por qué no aplica aquí.',
+        texto:'❌ lo típico · ✅ lo que hacemos' },
+      { t:'Slide 4', nombre:'El mecanismo',
+        ve:'3 pasos numerados con flechas. Se entiende sin leer el copy.',
+        dice:`${t.meca}, en tres pasos.`,
+        texto:'1 · 2 · 3' },
+      { t:'Slide 5', nombre:'Prueba + CTA',
+        ve:'Resultado real y botón visual.',
+        dice:`«${t.promesa}»`,
+        texto:'CTA claro y qué pasa después.' }
+    ],
+    produccion:['1080×1350 (4:5) para feed, 1080×1080 si dudas.',
+      'Misma tipografía y misma paleta en los 5 slides: parece una sola pieza.',
+      'Texto grande: se lee en un móvil a 30 cm.',
+      'El slide 1 decide todo: si no frena el scroll, los otros cuatro no existen.'],
+    errores:['No repitas el mismo texto en todos los slides.', 'No pongas más de 20 palabras por slide.',
+      'No termines sin CTA.']
+  };
+
+  if(formato === 'Estático') return {
+    duracion: '1 imagen', estructura: 'Cartel que se lee en 3 segundos',
+    bloques: [
+      { t:'Zona 1 · arriba', nombre:'Titular',
+        ve:'Texto grande, 5–7 palabras, alineado a la izquierda.',
+        dice:g1,
+        texto:'Es lo único que se lee en el feed. Que detenga el scroll.' },
+      { t:'Zona 2 · centro', nombre:'Imagen con prueba',
+        ve:'Foto real del producto o del resultado. Nada de stock.',
+        dice:'—',
+        texto:'Si hay número, va aquí y grande.' },
+      { t:'Zona 3 · abajo', nombre:'Oferta y CTA',
+        ve:'Banda de color con contraste alto.',
+        dice:`«${ctas[1]}»`,
+        texto:'Qué obtiene, cuánto cuesta y qué hacer.' },
+      { t:'Zona 4 · esquina', nombre:'Marca',
+        ve:'Logo pequeño, una sola vez.',
+        dice:'—',
+        texto:'Si el anuncio funciona, la marca se recuerda igual.' }
+    ],
+    produccion:['1080×1350 (4:5): ocupa más pantalla en el feed.',
+      'Contraste alto: fondo oscuro con texto claro o al revés, sin degradados suaves.',
+      'Una sola idea por imagen. Si necesitas dos, son dos anuncios.',
+      'Deja 14% de margen arriba y abajo: Meta recorta.'],
+    errores:['No pongas párrafos.', 'No uses más de dos tipografías.',
+      'No escondas el precio si es tu ventaja.']
+  };
+
+  /* Video UGC por defecto */
+  return {
+    duracion: '28–35 s', estructura: 'Historia en primera persona',
+    bloques: [
+      { t:'0–3 s', nombre:'Gancho',
+        ve:'Rostro a cámara, plano medio abierto, sin logo ni intro. Se empieza a media frase.',
+        dice:`«${g1}»`,
+        texto:'3–5 palabras, arriba. Nunca tapes la boca.' },
+      { t:'3–8 s', nombre:'El problema',
+        ve:'B-roll del dolor: la escena real, no un icono.',
+        dice:`«${t.dolor}» — dicho como lo diría el cliente, no como lo diría una marca.`,
+        texto:'Nada. Deja que la imagen hable.' },
+      { t:'8–14 s', nombre:'El giro',
+        ve:'Corte al hablante. Cambia el tono: de queja a solución.',
+        dice:'Qué probó y por qué esta vez fue distinto.',
+        texto:'«Hasta que…»' },
+      { t:'14–22 s', nombre:'El mecanismo',
+        ve:'Manos y pantalla: el mecanismo en acción.',
+        dice:`${t.meca}, explicado como se lo contarías a un amigo.`,
+        texto:'Los 3 pasos, numerados y pequeños.' },
+      { t:'22–28 s', nombre:'La prueba',
+        ve:'Resultado real en pantalla: captura, número, foto.',
+        dice:`«${t.promesa}»`,
+        texto:'El número, grande.' },
+      { t:'28–33 s', nombre:'CTA',
+        ve:'Vuelta al plano inicial, ahora con seguridad.',
+        dice:`«${ctas[0]}»`,
+        texto:'CTA + siguiente paso concreto.' }
+    ],
+    produccion:[base.plano, base.luz, base.audio, base.texto,
+      'Graba 3 versiones del gancho y prueba las 3: el primer segundo decide el 80% del resultado.'],
+    errores:['No empieces con "hola, soy…".', 'No uses música alta en el gancho.',
+      'No expliques el mecanismo antes de que duela el problema.']
+  };
+}
+
+</script>
+<script>
+/* ============================================================
+   Motor de puntuación · Índice de Confianza
+   Fórmula: docs/06 — IC = 0,30 EV + 0,20 ES + 0,20 EO + 0,15 CP + 0,15 EN − penalizaciones
+   ============================================================ */
+
+const VD_N = v => { const x = parseFloat(String(v).replace(',','.')); return isNaN(x)?0:x; };
+const VD_clamp = (v,a,b) => Math.max(a, Math.min(b, v));
+const VD_cap = v => v ? v.charAt(0).toUpperCase()+v.slice(1) : v;
+
+function vdHash(str){
+  let h = 2166136261;
+  for(let i=0;i<str.length;i++){ h ^= str.charCodeAt(i); h = Math.imul(h,16777619); }
+  return h >>> 0;
+}
+function vdRng(seed){ let s = seed>>>0; return () => { s = (Math.imul(s,1664525)+1013904223)>>>0; return s/4294967296; }; }
+function vdBetween(r,a,b){ return Math.round(a + r()*(b-a)); }
+
+/* --- componentes base --- */
+function vdLongevity(d){
+  d = VD_N(d);
+  if(d < 7) return 10; if(d < 14) return 30; if(d < 30) return 55;
+  if(d < 60) return 78; if(d < 90) return 88; return 100;
+}
+function vdScale(v){
+  v = VD_N(v);
+  if(v <= 1) return 10; if(v <= 3) return 45; if(v <= 6) return 72;
+  if(v <= 10) return 88; return 100;
+}
+function vdErPct(r){
+  const views = VD_N(r.views); if(!views) return 0;
+  const inter = VD_N(r.likes)+VD_N(r.comments)+VD_N(r.shares)+VD_N(r.saves);
+  return inter/views*100;
+}
+function vdErScore(er){
+  if(er <= 0) return 0;
+  if(er < 1) return 10; if(er < 2) return 35; if(er < 4) return 55;
+  if(er < 6) return 75; if(er < 10) return 90; return 100;
+}
+function vdVelocity(r){ return VD_N(r.views)/Math.max(1, VD_N(r.dias)); }
+function vdVelScore(v){
+  if(v < 1000) return 10; if(v < 10000) return 30; if(v < 100000) return 55;
+  if(v < 1000000) return 80; return 100;
+}
+function vdViralScore(r){
+  if(!VD_N(r.views)) return 0;
+  return Math.round(0.6*vdErScore(vdErPct(r)) + 0.4*vdVelScore(vdVelocity(r)));
+}
+
+/* --- calidad de prueba --- */
+function vdProofScore(brief){
+  const p = (brief && brief.prueba) || [];
+  let v = 0;
+  if(p.indexOf('testimonio') > -1) v += 40;
+  if(p.indexOf('demo') > -1)       v += 35;
+  if(p.indexOf('dato') > -1)       v += 25;
+  if(p.indexOf('fotos') > -1)      v += 10;
+  return v ? Math.min(100, v) : 25;
+}
+
+/* --- encaje declarado (país + categoría + conciencia) --- */
+function vdFitScore(brief){
+  if(!brief) return 50;
+  let v = 0;
+  if((brief.pais||'').trim()) v += 40;
+  if((brief.subnicho||'').trim() || (brief.mecanismo||'').trim()) v += 30;
+  if((brief.avatar||'').trim() && (brief.dolor||'').trim()) v += 30;
+  return v;
+}
+
+/* --- evidencia real recogida en la investigación --- */
+function vdEvidence(exp, angulo, plan, idx){
+  const todos = (exp.ads||[]).filter(a => (a.angulo||'').trim().toLowerCase() === String(angulo).toLowerCase());
+  const ads = todos.filter(a => a.origen !== 'ia');          // verificados a mano
+  const propuestos = todos.filter(a => a.origen === 'ia');    // sugeridos por IA, sin comprobar
+  const virales = (exp.viral||[]).filter(v => (v.angulo||'').trim().toLowerCase() === String(angulo).toLowerCase());
+
+  const real = ads.length > 0;
+  let EV = 0, ES = 0, EO = 0;
+
+  if(real){
+    EV = Math.max.apply(null, ads.map(a => vdLongevity(a.dias)));
+    ES = Math.max.apply(null, ads.map(a => vdScale(a.variantes)));
+  }
+  if(virales.length){
+    EO = Math.max.apply(null, virales.map(v => vdViralScore(v)));
+  }
+
+  /* lo que no exista se estima de forma determinista y se marca como estimado */
+  const r = vdRng(vdHash((exp.id||'x')+'|'+angulo+'|'+idx));
+  /* sin evidencia verificada, el IC es conservador: se descuenta 15% */
+  const estEV = Math.round(vdBetween(r, plan.ev[0], plan.ev[1]) * 0.85);
+  const estES = Math.round(vdBetween(r, plan.es[0], plan.es[1]) * 0.85);
+  const estEO = Math.round(vdBetween(r, plan.eo[0], plan.eo[1]) * 0.85);
+
+  const fuentes = [];
+  if(real && virales.length) fuentes.push('verificada');
+  else if(real || virales.length) fuentes.push('parcial');
+  else fuentes.push('estimada');
+  /* cuando la IA propuso anuncios, se avisa: hay indicio, no prueba */
+  const porIA = propuestos.length > 0;
+
+  return {
+    EV: real ? EV : estEV,
+    ES: real ? ES : estES,
+    EO: virales.length ? EO : estEO,
+    fuente: fuentes[0],
+    porIA: porIA,
+    referencias: ads.length,
+    virales: virales.length,
+    estimado: {ev: estEV, es: estES, eo: estEO}
+  };
+}
+
+/* --- cálculo completo de una pieza --- */
+function vdCalcIC(exp, plan, idx){
+  const ev = vdEvidence(exp, plan.a, plan, idx);
+  const brief = exp.brief || {};
+  const CP = vdProofScore(brief);
+  const EN = vdFitScore(brief);
+  const comp = vdCompliance(exp);
+
+  const bruto = 0.30*ev.EV + 0.20*ev.ES + 0.20*ev.EO + 0.15*CP + 0.15*EN;
+  const pens = [];
+  if(comp.pen) pens.push({m:`Compliance ${comp.nivel.toLowerCase()}`, v:-comp.pen});
+
+  const txtOferta = ((brief.oferta||'')+' '+(brief.promesa||'')+' '+(brief.garantia||'')).toLowerCase();
+  if(!/garant/.test(txtOferta)) pens.push({m:'Oferta sin garantía declarada', v:-3});
+
+  /* la evidencia real reduce la incertidumbre: eso vale puntos */
+  if(ev.fuente === 'verificada') pens.push({m:'Evidencia verificada del ángulo', v:+5});
+  else if(ev.fuente === 'parcial') pens.push({m:'Evidencia parcial del ángulo', v:+2});
+
+  const faltan = vdMissing(brief);
+  if(faltan.length) pens.push({m:`${faltan.length} datos ★ faltantes`, v:-Math.min(12, faltan.length*3)});
+
+  const total = pens.reduce((s,p)=>s+p.v, 0);
+  const ic = VD_clamp(Math.round(bruto + total), 20, 98);
+
+  return {
+    ic, banda: vdBanda(ic),
+    sub:{EV:ev.EV, ES:ev.ES, EO:ev.EO, CP, EN},
+    pens, bruto: Math.round(bruto*10)/10,
+    fuente: ev.fuente, referencias: ev.referencias, virales: ev.virales, porIA: ev.porIA
+  };
+}
+
+function vdBanda(ic){ return ic>=85?'A':ic>=70?'B':ic>=55?'C':'D'; }
+
+function vdMissing(brief){
+  const b = brief || {};
+  const miss = [];
+  if(!(b.subnicho||'').trim()) miss.push('sub-nicho');
+  if(!(b.mecanismo||'').trim()) miss.push('mecanismo propio');
+  if(!((b.prueba||[]).length)) miss.push('prueba disponible');
+  if(!(b.referencias||'').trim()) miss.push('referencias');
+  if(!((b.produccion||[]).length)) miss.push('qué puedes producir');
+  return miss;
+}
+
+/* --- ranking de anuncios en el panel de investigación --- */
+function vdAdScore(a){
+  const viral = VD_N(a.viral) || 0;
+  const fit = VD_clamp(VD_N(a.fit)||3,1,5)*20;
+  return Math.round(0.35*vdLongevity(a.dias) + 0.20*vdScale(a.variantes) + 0.25*viral + 0.20*fit);
+}
+
+</script>
+<script>
+/* ============================================================
+   Persistencia local. Sin servidor, sin cuenta, sin internet.
+   Guarda en el navegador y permite exportar/importar toda la base.
+   ============================================================ */
+const VD_KEY = 'vd_research_os_v1';
+
+const vdDB = {
+  data: { version:1, creado:new Date().toISOString(), clientes: [] },
+  disponible: true,
+
+  load(){
+    try{
+      const raw = localStorage.getItem(VD_KEY);
+      if(raw){
+        const p = JSON.parse(raw);
+        if(p && p.clientes) this.data = p;
+      }
+    }catch(e){
+      this.disponible = false;
+      console.warn('Sin almacenamiento disponible. La app funciona, pero no guarda.', e);
+    }
+    return this.data;
+  },
+
+  save(){
+    if(!this.disponible) return false;
+    try{
+      this.data.actualizado = new Date().toISOString();
+      localStorage.setItem(VD_KEY, JSON.stringify(this.data));
+      return true;
+    }catch(e){
+      this.disponible = false;
+      return false;
+    }
+  },
+
+  uid(){ return 'c' + Date.now().toString(36) + Math.random().toString(36).slice(2,6); },
+
+  clientes(){ return this.data.clientes; },
+
+  cliente(id){ return this.data.clientes.find(c => c.id === id); },
+
+  crear(nombre, brief){
+    const c = {
+      id: this.uid(),
+      nombre: nombre || 'Cliente sin nombre',
+      creado: new Date().toISOString(),
+      actualizado: new Date().toISOString(),
+      ia: 'Arena',
+      estado: 'nuevo',
+      brief: brief || vdBriefVacio(),
+      ads: [], kws: [], viral: [], rev: [], piezas: []
+    };
+    this.data.clientes.unshift(c);
+    this.save();
+    return c;
+  },
+
+  eliminar(id){
+    this.data.clientes = this.data.clientes.filter(c => c.id !== id);
+    this.save();
+  },
+
+  duplicar(id){
+    const c = this.cliente(id); if(!c) return null;
+    const copia = JSON.parse(JSON.stringify(c));
+    copia.id = this.uid();
+    copia.nombre = c.nombre + ' (copia)';
+    copia.creado = new Date().toISOString();
+    this.data.clientes.unshift(copia);
+    this.save();
+    return copia;
+  },
+
+  exportar(){
+    return JSON.stringify(this.data, null, 2);
+  },
+
+  importar(txt){
+    const p = JSON.parse(txt);
+    if(!p || !p.clientes) throw new Error('El archivo no tiene el formato esperado.');
+    this.data = p;
+    this.save();
+    return p.clientes.length;
+  },
+
+  resetear(){
+    this.data = { version:1, creado:new Date().toISOString(), clientes: [] };
+    try{ localStorage.removeItem(VD_KEY); }catch(e){}
+  }
+};
+
+function vdBriefVacio(){
+  return {
+    producto:'', precio:'', avatar:'', pais:'México', promesa:'', objetivo:'Ventas',
+    presupuesto:'', subnicho:'', dolor:'', deseo:'', mecanismo:'', referencias:'',
+    restricciones:'', garantia:'', prueba:[], produccion:[]
+  };
+}
+
+/* ---------- datos de demostración ---------- */
+function vdDemo(){
+  const c = vdDB.crear('Visión Digital (demo)', {
+    producto:'Programa online de movilidad para espalda',
+    precio:'97 USD',
+    avatar:'Mujeres de 35 a 50 años que se despiertan con dolor de espalda, ya probaron estiramientos y creen que es la edad',
+    pais:'México',
+    promesa:'Volver a moverte sin dolor en 21 días con 10 minutos al día',
+    objetivo:'Ventas',
+    presupuesto:'900',
+    subnicho:'dolor lumbar en mujeres de 35 a 50',
+    dolor:'despertarse con dolor de espalda y no poder agacharse',
+    deseo:'volver a moverse sin dolor y jugar con sus hijos',
+    mecanismo:'método de 3 fases sin impacto articular',
+    referencias:'@fisio_real, @muevete.mejor',
+    restricciones:'salud: sin promesas de curación ni antes/después explícito',
+    garantia:'30 días de garantía',
+    prueba:['testimonio','demo'],
+    produccion:['video','ugc']
+  });
+  c.estado = 'investigando';
+  c.ads = [
+    {pagina:'Centro Movilidad MX', pais:'MX', dias:112, variantes:8, objetivo:'Ventas', formato:'Video UGC', angulo:'Identidad', viral:82, fit:5},
+    {pagina:'Espalda Sana', pais:'MX', dias:74, variantes:5, objetivo:'Mensajes', formato:'Video UGC', angulo:'Costo de la inacción', viral:71, fit:4},
+    {pagina:'Rehab Total', pais:'MX', dias:95, variantes:11, objetivo:'Ventas', formato:'Testimonio', angulo:'Prueba social', viral:77, fit:4},
+    {pagina:'Fisio en Casa', pais:'MX', dias:31, variantes:2, objetivo:'Ventas', formato:'Video demo', angulo:'Demostración pura', viral:58, fit:5}
+  ];
+  c.kws = [
+    {termino:'cómo quitar el dolor de espalda sin pastillas', fuente:'IA', intencion:'Informativa', uso:'Gancho'},
+    {termino:'ejercicios para dolor lumbar en casa', fuente:'Google', intencion:'Informativa', uso:'Cuerpo'},
+    {termino:'por qué me duele la espalda al despertar', fuente:'AnswerThePublic', intencion:'Informativa', uso:'Objeción'}
+  ];
+  c.viral = [
+    {red:'TikTok', cuenta:'@fisio_real', views:820000, likes:74000, comments:1900, shares:6100, saves:21000, dias:14, formato:'Video UGC', angulo:'Identidad'},
+    {red:'Instagram', cuenta:'@muevete.mejor', views:145000, likes:12800, comments:640, shares:2100, saves:8900, dias:9, formato:'Video UGC', angulo:'Costo de la inacción'}
+  ];
+  c.rev = [{
+    url:'', gancho:'"Tu espalda no se arregla con pastillas. Se arregla con estos 3 movimientos."', arquetipo:'Contraintuitivo',
+    promesa:'Alivio perceptible en 10 minutos al día durante 7 días', mecanismo:'3 fases: descompresión, activación, sostenimiento',
+    prueba:'Demostración en cámara + testimonio de 30 s', objeciones:'"no tengo tiempo" al segundo 12',
+    estructura:'0-3 gancho · 3-8 promesa · 8-15 mecanismo · 15-22 objeción · 22-30 CTA',
+    cta:'"Comenta ESPALDA y te mando la rutina"', formato:'Video UGC vertical', porque:'Rompe la creencia dominante y da una acción barata de probar'
+  }];
+  /* expediente de ejemplo: simula una investigación ya hecha */
+  c.research = vdInvestigar(c);
+  c.research.porIA = true;
+  c.research.ia = 'Arena (demo)';
+  c.ads = [
+    {pagina:'Agencia Hispana Demo', pais:'US', dias:47, variantes:5, objetivo:'Prospectos',
+     formato:'Vídeo UGC', angulo:'Costo de la inacción', nota:'', origen:'manual'},
+    {pagina:'Marketing Latina Co', pais:'US', dias:31, variantes:3, objetivo:'Mensajes',
+     formato:'Testimonio', angulo:'Prueba social', nota:'', origen:'manual'}
+  ];
+  c.kws = c.research.kws.slice(0, 8).map(k => ({...k}));
+
+  c.piezas = vdBuildPieces(c, 7);
+  vdDB.save();
+  return c;
+}
+
+</script>
+<script>
+/* ============================================================
+   Motor de investigación automática
+   Genera el expediente completo a partir del briefing:
+   consultas verificables, keywords, ángulos detectados y enlaces
+   directos para comprobar cada dato en la fuente original.
+   ============================================================ */
+
+const VD_PAIS_COD = {
+  'México':'MX','Estados Unidos':'US','Colombia':'CO','Venezuela':'VE','Argentina':'AR','Chile':'CL',
+  'Perú':'PE','España':'ES','Ecuador':'EC','República Dominicana':'DO','Panamá':'PA','Guatemala':'GT',
+  'Costa Rica':'CR','Uruguay':'UY','Bolivia':'BO','Paraguay':'PY','Honduras':'HN','El Salvador':'SV',
+  'Nicaragua':'NI','Puerto Rico':'PR'
+};
+
+/* ---------- enlaces verificables ---------- */
+function vdLinkAdLibrary(q, pais){
+  const c = VD_PAIS_COD[pais] || 'US';
+  return 'https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=' + c +
+         '&q=' + encodeURIComponent(q) + '&search_type=keyword_unordered&media_type=all';
+}
+function vdLinkTikTok(q){ return 'https://www.tiktok.com/search?q=' + encodeURIComponent(q); }
+function vdLinkInstagram(q){ return 'https://www.instagram.com/explore/search/keyword/?q=' + encodeURIComponent(q); }
+function vdLinkYouTube(q){ return 'https://www.youtube.com/results?search_query=' + encodeURIComponent(q) + '&sp=CAM%253D'; }
+function vdLinkTrends(q, pais){
+  const c = VD_PAIS_COD[pais] || 'US';
+  return 'https://trends.google.com/trends/explore?geo=' + c + '&q=' + encodeURIComponent(q);
+}
+function vdLinkGoogle(q){ return 'https://www.google.com/search?q=' + encodeURIComponent(q); }
+
+/* ---------- utilidades de texto ---------- */
+function vdWords(s){
+  return String(s||'').toLowerCase()
+    .replace(/[.,;:()"“”¿?¡!]/g,' ')
+    .split(/\s+/).filter(w => w.length > 3);
+}
+function vdClean(s){ return String(s||'').trim().replace(/\s+/g,' '); }
+/* las búsquedas de la Biblioteca funcionan mejor con 3-6 palabras */
+function vdShort(s, n){
+  const w = vdClean(s).split(' ').filter(Boolean);
+  return w.length > (n||6) ? w.slice(0, n||6).join(' ') : w.join(' ');
+}
+
+/* ---------- generación del expediente ---------- */
+function vdInvestigar(c){
+  const b = c.brief || {};
+  const t = vdTokens(c);
+  const pais = b.pais || 'México';
+
+  /* 1 · consultas para la Biblioteca de Anuncios */
+  const semillas = [];
+  const push = (q, tipo) => {
+    q = vdShort(q, 6);
+    if(q.length > 2 && !semillas.some(s => s.q.toLowerCase() === q.toLowerCase())) semillas.push({q, tipo});
+  };
+  push(b.subnicho, 'nicho exacto');
+  push(b.producto, 'producto');
+  push(b.dolor, 'dolor');
+  push(b.deseo, 'deseo');
+  push(b.mecanismo, 'mecanismo');
+  if(b.producto){ push('curso ' + b.producto, 'oferta'); push('servicio ' + b.producto, 'oferta'); }
+  if(b.subnicho){ push('agencia ' + b.subnicho, 'competencia'); push('experto en ' + b.subnicho, 'competencia'); }
+  if(b.dolor) push('solución para ' + b.dolor, 'dolor');
+  if(b.deseo) push(b.deseo + ' rápido', 'deseo');
+  push(t.nicho + ' antes y después', 'prueba');
+  push(t.nicho + ' opiniones', 'prueba');
+  push(t.nicho + ' gratis', 'oferta');
+  if((b.referencias||'').trim()){
+    (b.referencias||'').split(/[,;\n]/).map(s => s.trim()).filter(Boolean).slice(0,4)
+      .forEach(r => push(r.replace(/^@/,''), 'competidor declarado'));
+  }
+
+  const consultas = semillas.slice(0, 16).map(s => ({
+    q: s.q,
+    tipo: s.tipo,
+    ads: vdLinkAdLibrary(s.q, pais),
+    tiktok: vdLinkTikTok(s.q),
+    instagram: vdLinkInstagram(s.q),
+    youtube: vdLinkYouTube(s.q),
+    trends: vdLinkTrends(s.q, pais)
+  }));
+
+  /* 2 · keywords con intención */
+  const kws = [];
+  const addKw = (termino, fuente, intencion, uso) => {
+    const tt = vdClean(termino);
+    if(tt.length < 3 || kws.some(k => k.termino.toLowerCase() === tt.toLowerCase())) return;
+    kws.push({termino: tt, fuente, intencion, uso});
+  };
+  if(b.dolor){
+    addKw('cómo resolver ' + b.dolor, 'Google', 'Informativa', 'Gancho');
+    addKw('por qué ' + b.dolor, 'AnswerThePublic', 'Informativa', 'Objeción');
+    addKw(b.dolor + ' solución', 'IA', 'Comercial', 'Gancho');
+  }
+  if(b.deseo){
+    addKw(b.deseo, 'IA', 'Comercial', 'Gancho');
+    addKw(b.deseo + ' en poco tiempo', 'Google', 'Comercial', 'Cuerpo');
+  }
+  if(b.producto){
+    addKw(b.producto + ' precio', 'Google', 'Transaccional', 'Landing');
+    addKw('opiniones de ' + b.producto, 'Google', 'Comparación', 'Objeción');
+    addKw(b.producto + ' funciona', 'TikTok', 'Comercial', 'Gancho');
+  }
+  if(b.subnicho){
+    addKw('mejor ' + b.subnicho, 'Google', 'Comparación', 'Cuerpo');
+    addKw(b.subnicho + ' para principiantes', 'YouTube', 'Informativa', 'Cuerpo');
+    addKw(b.subnicho + ' vale la pena', 'Reddit', 'Comparación', 'Objeción');
+  }
+  if(b.mecanismo) addKw(b.mecanismo, 'IA', 'Informativa', 'Cuerpo');
+  if((b.objecion||b.restricciones||'').trim()) addKw(vdClean(b.restricciones), 'Google', 'Informativa', 'Objeción');
+  addKw(t.nicho + ' antes y después', 'TikTok', 'Comercial', 'Gancho');
+  addKw(t.nicho + ' resultados reales', 'Instagram', 'Comercial', 'Gancho');
+
+  /* 3 · ángulos detectados con su razón */
+  const angulos = [];
+  const addAng = (a, razon, fuerza) => angulos.push({angulo:a, razon, fuerza});
+  if(b.dolor)    addAng('Costo de la inacción', 'El briefing declara un dolor concreto: "' + b.dolor + '". Es el ángulo que ataca la postergación.', 92);
+  addAng('Identidad', 'Siempre funciona en públicos que se sienten "no representados". Verifica con el término de nicho.', 85);
+  addAng('Prueba social', ((b.prueba||[]).length ? 'Tienes prueba disponible (' + (b.prueba||[]).join(', ') + '): explótala.' : 'Sin prueba declarada el ángulo baja de fuerza.'), (b.prueba||[]).length ? 88 : 55);
+  if(b.mecanismo) addAng('Demostración pura', 'El mecanismo declarado ("' + b.mecanismo + '") se puede mostrar en pantalla.', 84);
+  if(b.deseo)    addAng('Resultado rápido', 'El deseo declarado ("' + b.deseo + '") permite prometer un plazo concreto.', 78);
+  addAng('Objeción directa', 'Siempre hay una objeción previa: nombrarla antes de que la piense.', 76);
+  addAng('Curiosidad / misterio', 'Funciona en públicos fríos que aún no conocen la categoría.', 68);
+  addAng('Contra-narrativa', 'Apuesta: si el nicho está saturado de la misma promesa, invertirla gana.', 52);
+
+  /* 4 · competencia sugerida */
+  const competidores = (b.referencias||'').split(/[,;\n]/).map(s => s.trim()).filter(Boolean).slice(0,6);
+
+  return {
+    generado: new Date().toISOString(),
+    pais,
+    ia: c.ia || 'Arena',
+    consultas, kws, angulos, competidores,
+    resumen: vdResumen(c, consultas, kws, angulos)
+  };
+}
+
+function vdResumen(c, consultas, kws, angulos){
+  const b = c.brief || {};
+  const partes = [];
+  partes.push('Se construyeron ' + consultas.length + ' consultas para la Biblioteca de Anuncios de Meta en ' + (b.pais||'el mercado') + ', y ' + kws.length + ' términos de búsqueda clasificados por intención.');
+  partes.push('Los ángulos con más fuerza en este nicho son ' + angulos.slice(0,3).map(a => a.angulo).join(', ') + '.');
+  if(!(b.prueba||[]).length) partes.push('No declaraste prueba disponible: todas las piezas bajan de confianza hasta que tengas testimonios o demostración.');
+  if(!(b.mecanismo||'').trim()) partes.push('Sin mecanismo propio, las piezas se parecerán a las de la competencia: define qué haces distinto.');
+  return partes.join(' ');
+}
+
+/* ---------- prompt para IA con acceso a internet ---------- */
+function vdPromptInvestigacion(c){
+  const b = c.brief || {};
+  return `Actúa como director de investigación creativa especializado en Meta Ads 2026 (Andromeda / GEM / Lattice) y en el mercado hispano.
+
+=== NEGOCIO ===
+- Qué vende: ${b.producto || '[completar]'}
+- Precio: ${b.precio || '[completar]'}
+- Mercado: ${b.pais || '[completar]'}
+- Objetivo de campaña: ${b.objetivo || 'Ventas'}
+- Público: ${b.avatar || '[completar]'}
+- Dolor #1: ${b.dolor || '[completar]'}
+- Deseo #1: ${b.deseo || '[completar]'}
+- Promesa: ${b.promesa || '[completar]'}
+- Mecanismo propio: ${b.mecanismo || '[completar]'}
+- Prueba disponible: ${(b.prueba||[]).join(', ') || 'ninguna'}
+- Competidores conocidos: ${b.referencias || 'no declarados'}
+- Restricciones: ${b.restricciones || 'ninguna'}
+
+=== TAREA ===
+1) Busca en la Biblioteca de Anuncios de Meta (facebook.com/ads/library) anuncios ACTIVOS en ${b.pais || 'el mercado'} para este nicho. Registra página, días activo, número de variantes del mismo copy, objetivo inferido y formato.
+2) Identifica los ángulos más usados y cuáles llevan más tiempo activos.
+3) Busca en TikTok, Instagram y YouTube los contenidos con más interacción del nicho en los últimos 90 días. Registra red, cuenta, vistas, likes, comentarios, compartidos y guardados.
+4) Descompón los 3 mejores contenidos en 9 capas: gancho, promesa, mecanismo, prueba, objeciones, estructura, CTA, formato y razón de fondo.
+5) Propón 16 consultas de búsqueda y 12 términos con su intención, incluyendo términos de AnswerThePublic.
+6) Marca con [VERIFICADO] lo que comprobaste en la fuente y con [ESTIMADO] lo que infieres. Si no puedes ver la Biblioteca de Anuncios, deja "anuncios" vacío: es peor un dato falso que un dato ausente.
+
+=== FORMATO DE SALIDA (OBLIGATORIO) ===
+Devuelve SOLO un JSON válido, sin explicación, sin markdown y sin texto antes ni después. Exactamente esta forma:
+
+{"consultas":[{"q":"búsqueda de 3 a 6 palabras","tipo":"nicho exacto|producto|dolor|deseo|mecanismo|oferta|competencia|prueba"}],
+ "terminos":[{"termino":"...","fuente":"Google|AnswerThePublic|TikTok|Instagram|YouTube|Reddit","intencion":"Informativa|Comercial|Transaccional|Comparación","uso":"Gancho|Cuerpo|Landing|Objeción"}],
+ "angulos":[{"angulo":"uno de la lista permitida","razon":"por qué funciona en ESTE nicho, una frase","fuerza":0}],
+ "anuncios":[{"pagina":"nombre de la página","pais":"código de 2 letras","dias":0,"variantes":0,"objetivo":"Ventas|Prospectos|Mensajes|Tráfico|Interacción","formato":"Vídeo UGC|Estático|Carrusel|Vídeo demo|Testimonio","angulo":"uno de la lista permitida","nota":"qué se ve en el anuncio [VERIFICADO] o [ESTIMADO]"}],
+ "viral":[{"red":"TikTok|Instagram|YouTube","cuenta":"@cuenta","views":0,"likes":0,"comments":0,"shares":0,"saves":0,"dias":0,"angulo":"uno de la lista permitida"}],
+ "reversa":[{"cuenta":"@cuenta","gancho":"texto literal del gancho","promesa":"...","mecanismo":"...","prueba":"...","objeciones":"...","estructura":"...","cta":"...","formato":"...","porque":"por qué funciona"}]}
+
+ÁNGULOS PERMITIDOS (usa solo estos nombres exactos): ${VD_ANGULOS.join(' · ')}
+CANTIDADES: 16 consultas · 12 términos · 6 ángulos · hasta 10 anuncios · hasta 6 contenidos virales · 3 análisis de reversa.`;
+}
+
+</script>
+<script>
+/* ============================================================
+   Conexiones de IA por usuario
+   Cada persona conecta SU cuenta en SU navegador. Las llaves
+   nunca salen de este equipo: se guardan en localStorage y se
+   usan solo para llamar a la API que tú elijas.
+   ============================================================ */
+
+const VD_PROVEEDORES = [
+  { id:'openai', nombre:'OpenAI', tipo:'openai', base:'https://api.openai.com/v1/chat/completions',
+    modelos:['gpt-5','gpt-4.1','gpt-4o'], alta:'platform.openai.com/api-keys', nota:'Pago por uso.' },
+  { id:'anthropic', nombre:'Anthropic · Claude', tipo:'anthropic', base:'https://api.anthropic.com/v1/messages',
+    modelos:['claude-sonnet-4-5','claude-opus-4-1','claude-haiku-4-5'], alta:'console.anthropic.com', nota:'Pago por uso.' },
+  { id:'gemini', nombre:'Google Gemini', tipo:'gemini', base:'https://generativelanguage.googleapis.com/v1beta/models',
+    modelos:['gemini-2.5-pro','gemini-2.5-flash'], alta:'aistudio.google.com/apikey', nota:'Tiene nivel gratuito.' },
+  { id:'openrouter', nombre:'OpenRouter', tipo:'openai', base:'https://openrouter.ai/api/v1/chat/completions',
+    modelos:['anthropic/claude-sonnet-4.5','openai/gpt-5','google/gemini-2.5-pro','x-ai/grok-4','deepseek/deepseek-chat'],
+    alta:'openrouter.ai/keys', nota:'Una llave, muchos modelos: ideal para comparar.' },
+  { id:'custom', nombre:'Compatible OpenAI (Arena, Groq, LM Studio…)', tipo:'openai', base:'',
+    modelos:[''], alta:'', nota:'Escribe la URL base de la API.' }
+];
+
+const VD_IA_SECCIONES = [
+  ['investigacion','Investigación','Barrido del nicho, anuncios y ángulos.'],
+  ['redaccion','Redacción','Copys, ganchos y guiones.'],
+  ['analisis','Análisis','Ingeniería inversa y diagnóstico.']
+];
+
+/* ---------- almacenamiento ---------- */
+const VD_IA_KEY = 'vd_ia_v1';
+let vdIAConn = { conexiones:[], activa:{ investigacion:null, redaccion:null, analisis:null } };
+let vdIAError = '';
+
+function vdIACargar(){
+  try{
+    const raw = localStorage.getItem(VD_IA_KEY);
+    if(raw) vdIAConn = JSON.parse(raw);
+    if(!vdIAConn.conexiones) vdIAConn.conexiones = [];
+    if(!vdIAConn.activa) vdIAConn.activa = { investigacion:null, redaccion:null, analisis:null };
+  }catch(e){ vdIAError = 'No se pudieron leer las conexiones guardadas.'; }
+  return vdIAConn;
+}
+function vdIAGuardar(){
+  try{ localStorage.setItem(VD_IA_KEY, JSON.stringify(vdIAConn)); }
+  catch(e){ vdIAError = 'Este navegador no permite guardar las llaves.'; }
+}
+function vdIAProv(id){ return VD_PROVEEDORES.find(p => p.id === id); }
+function vdIAGet(id){ return vdIAConn.conexiones.find(c => c.id === id); }
+
+function vdIAConectar(provId, llave, modelo, etiqueta, baseUrl){
+  const p = vdIAProv(provId); if(!p) return null;
+  const id = 'c' + Date.now().toString(36) + Math.random().toString(36).slice(2,6);
+  const conn = {
+    id, prov: provId, llave: (llave||'').trim(), modelo: (modelo||p.modelos[0]||'').trim(),
+    etiqueta: (etiqueta||'').trim() || (p.nombre + (modelo ? ' · ' + modelo : '')),
+    base: (baseUrl||p.base||'').trim(), estado:'sin-probar', creado: new Date().toISOString()
+  };
+  vdIAConn.conexiones.push(conn);
+  const libres = VD_IA_SECCIONES.map(s => s[0]).filter(k => !vdIAConn.activa[k]);
+  if(libres.length) vdIAConn.activa[libres[0]] = id;
+  vdIAGuardar();
+  return conn;
+}
+function vdIABorrar(id){
+  vdIAConn.conexiones = vdIAConn.conexiones.filter(c => c.id !== id);
+  VD_IA_SECCIONES.forEach(s => { if(vdIAConn.activa[s[0]] === id) vdIAConn.activa[s[0]] = null; });
+  vdIAGuardar();
+}
+function vdIAAsignar(seccion, id){ vdIAConn.activa[seccion] = id || null; vdIAGuardar(); }
+function vdIADe(seccion){ return vdIAGet(vdIAConn.activa[seccion]); }
+function vdIAHayAlguna(){ return vdIAConn.conexiones.length > 0; }
+
+/* ---------- llamada a la API ---------- */
+async function vdIALlamar(conn, prompt, opts){
+  opts = opts || {};
+  if(!conn) throw new Error('No hay una IA conectada en esta sección.');
+  if(!conn.llave) throw new Error('Esta conexión no tiene llave.');
+  const p = vdIAProv(conn.prov) || { tipo:'openai' };
+  const sys = opts.sistema || 'Eres un estratega senior de Meta Ads. Respondes en español, concreto y sin relleno.';
+  const tokens = opts.tokens || 4000;
+  let url, headers, body;
+
+  if(p.tipo === 'anthropic'){
+    url = conn.base || p.base;
+    headers = { 'content-type':'application/json', 'x-api-key': conn.llave,
+      'anthropic-version':'2023-06-01', 'anthropic-dangerous-direct-browser-access':'true' };
+    body = { model: conn.modelo, max_tokens: tokens, system: sys,
+             messages:[{ role:'user', content: prompt }] };
+  } else if(p.tipo === 'gemini'){
+    const base = conn.base || p.base;
+    url = base + '/' + conn.modelo + ':generateContent?key=' + encodeURIComponent(conn.llave);
+    headers = { 'content-type':'application/json' };
+    body = { contents:[{ parts:[{ text: sys + '\n\n' + prompt }] }] };
+  } else {
+    url = conn.base || p.base;
+    if(!url) throw new Error('Falta la URL base de la API en esta conexión.');
+    headers = { 'content-type':'application/json', 'Authorization':'Bearer ' + conn.llave };
+    body = { model: conn.modelo, messages:[{ role:'system', content: sys },{ role:'user', content: prompt }],
+             max_tokens: tokens };
+  }
+
+  let res;
+  try{
+    res = await fetch(url, { method:'POST', headers, body: JSON.stringify(body) });
+  }catch(e){
+    throw new Error('No se pudo conectar con ' + (conn.prov || 'la API') + '. Causas habituales: (1) abriste el archivo con doble clic y el navegador bloquea el origen; ' +
+      '(2) la llave no es válida y el proveedor no devuelve la cabecera de permiso, así que el navegador lo muestra como error de red; ' +
+      '(3) no hay internet. Prueba desde el servidor local o desde GitHub Pages.');
+  }
+  const txt = await res.text();
+  let json = null; try{ json = JSON.parse(txt); }catch(e){}
+
+  if(!res.ok){
+    const msg = (json && (json.error && (json.error.message || json.error)) || txt || '').toString().slice(0, 240);
+    if(res.status === 401 || res.status === 403) throw new Error('Llave rechazada (' + res.status + '). ' + msg);
+    if(res.status === 429) throw new Error('Límite o saldo agotado (' + res.status + '). Revisa tu cuenta o cambia de IA.');
+    throw new Error('Error ' + res.status + ': ' + msg);
+  }
+
+  if(p.tipo === 'anthropic') return (json.content && json.content[0] && json.content[0].text) || '';
+  if(p.tipo === 'gemini'){
+    const c = json && json.candidates && json.candidates[0];
+    return (c && c.content && c.content.parts && c.content.parts.map(x => x.text).join('')) || '';
+  }
+  return (json && json.choices && json.choices[0] && json.choices[0].message && json.choices[0].message.content) || '';
+}
+
+async function vdIAProbar(conn){
+  try{
+    const r = await vdIALlamar(conn, 'Responde solo con la palabra: conectado', { tokens: 20 });
+    conn.estado = 'ok'; conn.ultimo = new Date().toISOString(); conn.error = '';
+    vdIAGuardar();
+    return { ok:true, texto: (r||'').trim().slice(0,40) };
+  }catch(e){
+    conn.estado = 'error'; conn.error = e.message; conn.ultimo = new Date().toISOString();
+    vdIAGuardar();
+    return { ok:false, texto: e.message };
+  }
+}
+
+/* ---------- comparar dos IA con la misma tarea ---------- */
+async function vdIAComparar(prompt, ids){
+  return Promise.all(ids.map(async id => {
+    const conn = vdIAGet(id);
+    const t0 = Date.now();
+    try{
+      const texto = await vdIALlamar(conn, prompt, { tokens: 1500 });
+      return { id, nombre: conn ? conn.etiqueta : id, ok:true, texto, ms: Date.now() - t0 };
+    }catch(e){
+      return { id, nombre: conn ? conn.etiqueta : id, ok:false, texto: e.message, ms: Date.now() - t0 };
+    }
+  }));
+}
+
+/* ---------- extraer JSON de una respuesta libre ---------- */
+function vdParseJSON(txt){
+  if(!txt) return null;
+  let s = String(txt).trim();
+  s = s.replace(/^```(?:json)?/i, '').replace(/```$/, '').trim();
+  const a = s.indexOf('{'), b = s.lastIndexOf('}');
+  if(a < 0 || b <= a) return null;
+  try{ return JSON.parse(s.slice(a, b + 1)); }catch(e){ return null; }
+}
+
+/* ---------- investigación con IA ---------- */
+function vdIAPromptInvestigacion(c){ return vdPromptInvestigacion(c); }
+
+/* fusiona un JSON de investigación (venga de una API o pegado a mano) */
+function vdFusionarInvestigacion(c, data, etiqueta){
+  const pais = (c.brief && c.brief.pais) || 'México';
+  const base = vdInvestigar(c);           // expediente local como red de seguridad
+
+  const consultas = (data.consultas || []).map(x => {
+    const q = vdShort(x.q || '', 6);
+    return { q, tipo: x.tipo || 'nicho', ads: vdLinkAdLibrary(q, pais), tiktok: vdLinkTikTok(q),
+             instagram: vdLinkInstagram(q), youtube: vdLinkYouTube(q), trends: vdLinkTrends(q, pais) };
+  }).filter(x => x.q);
+
+  const angulos = (data.angulos || [])
+    .filter(a => VD_ANGULOS.indexOf(a.angulo) >= 0)
+    .map(a => ({ angulo: a.angulo, razon: a.razon || '', fuerza: Math.max(0, Math.min(100, Number(a.fuerza) || 60)) }));
+
+  const anuncios = (data.anuncios || []).filter(a => a.pagina).map(a => ({
+    pagina: a.pagina, pais: (a.pais || 'MX').toUpperCase().slice(0,2),
+    dias: Number(a.dias) || 0, variantes: Number(a.variantes) || 0,
+    objetivo: a.objetivo || '?', formato: a.formato || 'Estático',
+    angulo: VD_ANGULOS.indexOf(a.angulo) >= 0 ? a.angulo : 'Identidad',
+    nota: a.nota || '',
+    /* si la IA lo comprobó en la Biblioteca y lo marcó [VERIFICADO], cuenta como evidencia real */
+    origen: /\[?verificad/i.test(a.nota || '') && !/estimad/i.test(a.nota || '') ? 'manual' : 'ia'
+  }));
+
+  const research = {
+    generado: new Date().toISOString(), pais, ia: etiqueta, porIA: true,
+    consultas: consultas.length ? consultas : base.consultas,
+    kws: (data.terminos || []).length ? data.terminos : base.kws,
+    angulos: angulos.length ? angulos : base.angulos,
+    competidores: base.competidores,
+    resumen: (consultas.length || angulos.length)
+      ? 'Investigación generada por ' + etiqueta + ' a partir de tu briefing: ' + consultas.length +
+        ' consultas, ' + (data.terminos||[]).length + ' términos y ' + angulos.length + ' ángulos.' +
+        (anuncios.length ? ' Propuso ' + anuncios.length + ' anuncios (sin verificar).' : ' No propuso anuncios: verifícalos con los enlaces.')
+      : base.resumen
+  };
+  const viral = (data.viral || []).filter(v => v.cuenta || v.red).map(v => ({
+    red: v.red || 'TikTok', cuenta: v.cuenta || '', views: Number(v.views) || 0,
+    likes: Number(v.likes) || 0, comments: Number(v.comments) || 0, shares: Number(v.shares) || 0,
+    saves: Number(v.saves) || 0, dias: Number(v.dias) || 0,
+    angulo: VD_ANGULOS.indexOf(v.angulo) >= 0 ? v.angulo : 'Identidad'
+  }));
+
+  const reversa = (data.reversa || []).map(r => ({
+    cuenta: r.cuenta || '', gancho: r.gancho || '', arquetipo: r.arquetipo || '',
+    promesa: r.promesa || '', mecanismo: r.mecanismo || '', prueba: r.prueba || '',
+    objeciones: r.objeciones || '', estructura: r.estructura || '', cta: r.cta || '',
+    formato: r.formato || '', porque: r.porque || ''
+  }));
+
+  return { ok:true, research, anuncios, viral, reversa };
+}
+
+async function vdInvestigarConIA(c, conn){
+  const txt = await vdIALlamar(conn, vdIAPromptInvestigacion(c), { tokens: 4000 });
+  const data = vdParseJSON(txt);
+  if(!data) return { ok:false, crudo: txt };
+  return vdFusionarInvestigacion(c, data, conn.etiqueta);
+}
+
+</script>
+<script>
+/* ============================================================
+   Generador del lote: 7 (o 14) piezas rankeadas por IC.
+   Combina el diccionario (content.js) con la evidencia real (ic.js).
+   ============================================================ */
+
+function vdBuildPieces(c, n){
+  const total = n || 7;
+  const plan = VD_PLAN.slice(0, total);
+  const t = vdTokens(c);
+  const ctas = VD_CTAS[c.brief.objetivo] || VD_CTAS['Ventas'];
+  const comp = vdCompliance(c);
+
+  const piezas = plan.map((p, i) => {
+    const calc = vdCalcIC(c, p, i);
+    const g1 = VD_ARQ[p.q1](t);
+    const g2 = VD_ARQ[p.q2](t);
+    const g3 = VD_ARQ[p.q1 === 'directo' ? 'espejo' : 'directo'](t);
+
+    const piezaTmp = { ganchos: [g1, g2, g3] };
+    return {
+      n: i + 1,
+      angulo: p.a, formato: p.f, conciencia: p.c, tier: p.tier,
+      ganchos: [g1, g2, g3],
+      copy: `${g1} ${VD_cap(t.meca)}. ${VD_cap(t.promesa)}.`,
+      guion: vdGuion(p.f, t, ctas),
+      guionCompleto: vdGuionCompleto(p.f, t, ctas, piezaTmp),
+      ctas: [ctas[0], ctas[1]],
+      prueba: (c.brief.prueba||[]).length
+        ? 'Usar el activo disponible: ' + (c.brief.prueba||[]).join(', ') + '.'
+        : 'Define el activo de prueba antes de producir: sin prueba, la promesa no se sostiene.',
+      img: vdPromptImg(p.f, t, i),
+      vid: vdPromptVid(p.f, t),
+      hip: `Si "${p.a.toLowerCase()}" está funcionando en ${t.pais}, esta pieza debería superar 25% de Hook Rate y 15% de Hold Rate con un costo por resultado menor al promedio de la cuenta.`,
+      metrica: (p.f==='Estático' || p.f==='Carrusel')
+        ? 'CTR ≥ 1,5% · día 3: cortar si el CTR es menor a 0,8%'
+        : 'Hook Rate ≥ 25% · Hold Rate ≥ 15% · día 3: cortar si el Hook Rate es menor a 20%',
+      comp: comp, brief: c.brief,
+      ic: calc.ic, banda: calc.banda, sub: calc.sub, pens: calc.pens, bruto: calc.bruto,
+      fuente: calc.fuente, referencias: calc.referencias, virales: calc.virales, porIA: !!calc.porIA
+    };
+  });
+
+  return piezas.sort((a,b) => b.ic - a.ic).map((p, i) => { p.rank = i + 1; return p; });
+}
+
+function vdICPromedio(piezas){
+  if(!piezas.length) return 0;
+  return Math.round(piezas.reduce((s,p)=>s+p.ic, 0) / piezas.length);
+}
+
+function vdMarkdown(c){
+  const p = c.piezas || [];
+  let out = `[Entrega generada con AdForge · Content & Ads Studio — Visión Digital]\n\n`;
+  out += `# ${c.nombre}\n\n`;
+  out += `Producto: ${c.brief.producto}\nPaís: ${c.brief.pais}\nObjetivo: ${c.brief.objetivo}\n`;
+  out += `Piezas: ${p.length} · IC promedio: ${vdICPromedio(p)}\n\n`;
+  p.forEach(x => {
+    out += `\n---\n\n## #${x.rank} · ${x.angulo} · ${x.formato} — IC ${x.ic} (banda ${x.banda})\n`;
+    out += `Conciencia: ${x.conciencia} · Perfil: ${x.tier === 'A' ? 'Ancla' : x.tier === 'B' ? 'Adaptación' : 'Disruptiva'}\n\n`;
+    out += `**Ganchos**\n1. ${x.ganchos[0]}\n2. ${x.ganchos[1]}\n3. ${x.ganchos[2]}\n\n`;
+    out += `**Copy:** ${x.copy}\n\n**Guion**\n${x.guion.map(l => '- ' + l).join('\n')}\n\n`;
+    out += `**CTAs:** ${x.ctas[0]} / ${x.ctas[1]}\n\n`;
+    out += `**Prueba:** ${x.prueba}\n\n**Prompt de imagen:** ${x.img}\n\n**Prompt de video:** ${x.vid}\n\n`;
+    out += `**Hipótesis:** ${x.hip}\n\n**Métrica:** ${x.metrica}\n\n`;
+    out += `**Compliance (${x.comp.nivel}):** ${x.comp.nota}\n`;
+  });
+  out += `\n---\n_AdForge · Content & Ads Studio · Visión Digital_`;
+  return out;
+}
+
+function vdSlug(s){
+  return String(s||'cliente').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,40) || 'cliente';
+}
+
+</script>
+<script>
+/* ============================================================
+   Vistas de la interfaz
+   ============================================================ */
+const vdEsc = v => String(v==null?'':v).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const vdFmt = v => new Intl.NumberFormat('es').format(Math.round(VD_N(v)));
+
+const VD_PAISES = ['México','Colombia','Venezuela','Argentina','Chile','Perú','España','Ecuador','República Dominicana','Panamá','Estados Unidos','Guatemala','Costa Rica','Uruguay','Bolivia','Paraguay','Honduras','El Salvador','Nicaragua','Puerto Rico'];
+const VD_OBJETIVOS = ['Ventas','Mensajes','Prospectos','Tráfico','Interacción','Reconocimiento'];
+const VD_IAS = ['Arena','ChatGPT','Gemini','Claude','Perplexity','API propia','Sin IA'];
+
+function vdEstadoChip(c){
+  if(c.piezas && c.piezas.length) return '<span class="pill pA">Entregado</span>';
+  if(c.ads && c.ads.length || c.kws && c.kws.length) return '<span class="pill pB">Investigando</span>';
+  return '<span class="pill pC">Nuevo</span>';
+}
+
+/* ---------------- HOME ---------------- */
+function vdViewHome(){
+  const cs = vdDB.clientes();
+  const totalPiezas = cs.reduce((s,c)=>s+((c.piezas||[]).length),0);
+  const totalAds = cs.reduce((s,c)=>s+((c.ads||[]).length),0);
+  const conEntrega = cs.filter(c => (c.piezas||[]).length).length;
+
+  return `
+  <div class="row">
+    <div>
+      <h1 class="page">Clientes y expedientes</h1>
+      <div class="sub">Cada cliente guarda su briefing, su investigación y su entrega. Todo en este navegador.</div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn" data-act="nuevo">+ Nuevo cliente</button>
+      <button class="btn ghost" data-act="demo">Cargar demo</button>
+    </div>
+  </div>
+
+  <details class="resumen">
+    <summary>📊 Resumen · ${cs.length} cliente${cs.length===1?'':'s'} · ${totalPiezas} pieza${totalPiezas===1?'':'s'} generada${totalPiezas===1?'':'s'}<span class="f">▾</span></summary>
+    <div class="grid g4" style="margin:14px 0 22px">
+      <div class="kpi"><div class="v">${cs.length}</div><div class="l">Clientes</div></div>
+      <div class="kpi"><div class="v">${conEntrega}</div><div class="l">Con entrega</div></div>
+      <div class="kpi"><div class="v">${totalAds}</div><div class="l">Anuncios investigados</div></div>
+      <div class="kpi"><div class="v">${totalPiezas}</div><div class="l">Piezas generadas</div></div>
+    </div>
+  </details>
+
+  ${cs.length ? `<div class="grid g3">${cs.map(c => `
+    <div class="cli">
+      <div data-act="abrir" data-id="${c.id}" style="cursor:pointer">
+        <b>${vdEsc(c.nombre)}</b>
+        <div class="m">${vdEsc(c.brief.producto || 'Sin briefing')} · ${vdEsc(c.brief.pais || '—')}</div>
+      </div>
+      <div class="foot">
+        <span>${(c.piezas||[]).length ? (c.piezas||[]).length + ' piezas · IC ' + vdICPromedio(c.piezas) : 'Sin entrega'}</span>
+        <div style="display:flex;gap:6px;align-items:center">
+          <button class="mini" data-act="renombrar" data-id="${c.id}" title="Cambiar el nombre">✏️</button>
+          <button class="mini" data-act="borrarCli" data-id="${c.id}" title="Eliminar">🗑</button>
+          ${vdEstadoChip(c)}
+        </div>
+      </div>
+    </div>`).join('')}</div>` : `
+    <div class="empty">
+      <b>Todavía no hay clientes</b>
+      Crea el primero o carga el ejemplo para ver el sistema completo funcionando.
+      <div style="margin-top:16px"><button class="btn" data-act="nuevo">+ Nuevo cliente</button>
+      <button class="btn ghost" data-act="demo" style="margin-left:8px">Cargar demo</button></div>
+    </div>`}
+
+  <div class="card" style="margin-top:22px">
+    <div class="row" style="margin-bottom:0">
+      <div>
+        <h3 style="font-size:14px">Copia de seguridad</h3>
+        <div class="hint">Los datos viven en este navegador. Exporta el archivo para no perderlos o para pasarlos a otra computadora.</div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn ghost sm" data-act="exportar">Exportar base (.json)</button>
+        <button class="btn ghost sm" data-act="importar">Importar base</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+/* ---------------- CLIENTE ---------------- */
+function vdViewCliente(){
+  const c = vdDB.cliente(vdApp.clienteId);
+  if(!c) return '<div class="empty"><b>Cliente no encontrado</b></div>';
+
+  const tabs = [
+    ['brief','Briefing'],
+    ['inv','Investigación'],
+    ['entrega','Entrega']
+  ];
+
+  return `
+  <div class="row">
+    <div>
+      <div class="hint" style="margin-bottom:6px"><a href="#" data-act="home">← Clientes</a></div>
+      <h1 class="page">${vdEsc(c.nombre)}</h1>
+      <div class="sub">${vdEsc(c.brief.producto || 'Sin producto definido')} · ${vdEsc(c.brief.pais || '—')} · objetivo ${vdEsc(c.brief.objetivo)}</div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      ${vdEstadoChip(c)}
+      <button class="btn ghost sm" data-act="duplicar">Duplicar</button>
+      <button class="btn danger sm" data-act="eliminar">Eliminar</button>
+    </div>
+  </div>
+
+  ${vdStepper(c)}
+
+  <div class="tabs">
+    ${tabs.map(([id,l]) => `<button class="tabbtn ${vdApp.tab===id?'on':''}" data-act="tab" data-id="${id}">${l}</button>`).join('')}
+  </div>
+
+  ${vdApp.tab==='brief' ? vdTabBrief(c) : vdApp.tab==='inv' ? vdTabInv(c) : vdTabEntrega(c)}`;
+}
+
+/* ---------------- TAB BRIEFING ---------------- */
+function vdTabBrief(c){
+  const b = c.brief;
+  const star = '<span class="req">★</span> ';
+  const reqs = [b.producto,b.precio,b.avatar,b.pais,b.promesa,b.objetivo,b.presupuesto];
+  const done = reqs.filter(x => String(x).trim()).length;
+
+  return `
+  <div class="card">
+    <div class="field" style="margin-bottom:0">
+      <label>Nombre del cliente o proyecto</label>
+      <input data-nombre value="${vdEsc(c.nombre)}" placeholder="Nombre del cliente">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row" style="margin-bottom:10px">
+      <div><b>Datos obligatorios</b> <span class="hint">— sin estos siete no se puede investigar</span></div>
+      <b id="reqCount">${done}/7</b>
+    </div>
+    <div class="bar"><i id="reqBar" style="width:${Math.round(done/7*100)}%"></i></div>
+  </div>
+
+  <div class="card">
+    <div class="blk"><div class="n">1</div><div><h3>Tu negocio</h3><span>Qué vendes y a qué precio</span></div></div>
+    <div class="grid g2">
+      <div class="field"><label>Qué vendes <span class="req">*</span></label>
+        <input data-f="producto" value="${vdEsc(b.producto)}" placeholder="Programa online de movilidad"></div>
+      <div class="field"><label>Precio <span class="req">*</span></label>
+        <input data-f="precio" value="${vdEsc(b.precio)}" placeholder="97 USD"></div>
+    </div>
+    <div class="field"><label>${star}Sub-nicho o categoría exacta</label>
+      <input data-f="subnicho" value="${vdEsc(b.subnicho)}" placeholder="dolor lumbar en mujeres de 35 a 50"></div>
+    <div class="field"><label>${star}Mecanismo propio (por qué tú)</label>
+      <input data-f="mecanismo" value="${vdEsc(b.mecanismo)}" placeholder="método de 3 fases sin impacto articular"></div>
+  </div>
+
+  <div class="card">
+    <div class="blk"><div class="n">2</div><div><h3>Tu cliente</h3><span>A quién le vendes y en qué país</span></div></div>
+    <div class="field"><label>A quién le vendes <span class="req">*</span></label>
+      <textarea data-f="avatar" placeholder="Mujeres de 35 a 50 que se despiertan con dolor de espalda">${vdEsc(b.avatar)}</textarea></div>
+    <div class="grid g2">
+      <div class="field"><label>Su dolor #1, en sus palabras</label>
+        <input data-f="dolor" value="${vdEsc(b.dolor)}" placeholder="despertarse con dolor de espalda"></div>
+      <div class="field"><label>El resultado que busca</label>
+        <input data-f="deseo" value="${vdEsc(b.deseo)}" placeholder="volver a moverse sin dolor"></div>
+    </div>
+    <div class="grid g2">
+      <div class="field"><label>País / mercado <span class="req">*</span></label>
+        <select data-f="pais">${VD_PAISES.map(p=>`<option ${b.pais===p?'selected':''}>${p}</option>`).join('')}</select></div>
+      <div class="field"><label>Objetivo de campaña <span class="req">*</span></label>
+        <select data-f="objetivo">${VD_OBJETIVOS.map(o=>`<option ${b.objetivo===o?'selected':''}>${o}</option>`).join('')}</select></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="blk"><div class="n">3</div><div><h3>Tu promesa</h3><span>Qué resultado das y qué prueba tienes</span></div></div>
+    <div class="field"><label>Qué prometes y en cuánto tiempo <span class="req">*</span></label>
+      <textarea data-f="promesa" placeholder="Volver a moverte sin dolor en 21 días con 10 minutos al día">${vdEsc(b.promesa)}</textarea></div>
+    <div class="field"><label>Garantía</label>
+      <input data-f="garantia" value="${vdEsc(b.garantia)}" placeholder="30 días de garantía">
+      <div class="hint">Sin garantía declarada, el IC del lote baja 3 puntos.</div></div>
+    <div class="field"><label>Prueba que tienes</label>
+      <div>${[['testimonio','Testimonios'],['demo','Demostración'],['dato','Datos o cifras'],['fotos','Fotos reales']]
+        .map(([k,l])=>`<label class="chk ${(b.prueba||[]).indexOf(k)>-1?'on':''}">
+          <input type="checkbox" data-chk="prueba" data-v="${k}" ${(b.prueba||[]).indexOf(k)>-1?'checked':''}>${l}</label>`).join('')}</div>
+    </div>
+    <div class="field"><label>Referencias o competidores</label>
+      <input data-f="referencias" value="${vdEsc(b.referencias)}" placeholder="@cuenta1, @cuenta2, marca.com"></div>
+  </div>
+
+  <div class="card">
+    <div class="blk"><div class="n">4</div><div><h3>Campaña y límites</h3><span>Presupuesto, restricciones y producción</span></div></div>
+    <div class="grid g2">
+      <div class="field"><label>Presupuesto mensual (USD) <span class="req">*</span></label>
+        <input data-f="presupuesto" value="${vdEsc(b.presupuesto)}" placeholder="900"></div>
+      <div class="field"><label>¿Con qué IA trabajamos?</label>
+        <select data-f="ia">${VD_IAS.map(i=>`<option ${c.ia===i?'selected':''}>${i}</option>`).join('')}</select></div>
+    </div>
+    <div class="field"><label>Qué NO puedes decir</label>
+      <input data-f="restricciones" value="${vdEsc(b.restricciones)}" placeholder="salud: sin promesas de curación"></div>
+    <div class="field"><label>Qué puedes producir</label>
+      <div>${[['video','Video propio'],['ugc','UGC / clientes'],['foto','Fotos'],['solo','Solo diseño con IA']]
+        .map(([k,l])=>`<label class="chk ${(b.produccion||[]).indexOf(k)>-1?'on':''}">
+          <input type="checkbox" data-chk="produccion" data-v="${k}" ${(b.produccion||[]).indexOf(k)>-1?'checked':''}>${l}</label>`).join('')}</div>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:10px;flex-wrap:wrap">
+    <button class="btn" data-act="tab" data-id="inv">Ir a la investigación →</button>
+    <button class="btn ghost" data-act="generar">Generar piezas con lo que hay</button>
+  </div>`;
+}
+
+/* ---------------- TAB INVESTIGACIÓN ---------------- */
+function vdTabInv(c){
+  const r = c.research;
+  return vdPanelIA(c) + (r ? vdInvDossier(c, r) : '') + vdInvDatos(c);
+}
+
+/* ============================================================
+   PANEL ÚNICO: copiar prompt → Arena → pegar resultado → cargar
+   ============================================================ */
+function vdPanelIA(c){
+  const r = c.research;
+  return `
+  <div class="card" style="border-color:#4a3a17;background:linear-gradient(180deg,#1a1508,#0d1017)">
+    <div class="row" style="margin-bottom:6px">
+      <div>
+        <h3 style="font-size:18px;margin:0">Traer la investigación</h3>
+        <div class="hint" style="max-width:66ch;margin-top:6px">
+          Un solo camino, tres pasos. No hay que conectar nada ni pegar llaves.
+        </div>
+      </div>
+      ${r ? '<span class="pill pA">investigación cargada</span>' : ''}
+    </div>
+
+    <div class="paso-item">
+      <div class="paso-num">1</div>
+      <div style="flex:1">
+        <b class="paso-tit">Copia el prompt</b>
+        <div class="hint-sm">Lleva dentro todo el briefing de ${vdEsc(c.nombre||'este cliente')}: qué vende, a quién, la promesa, el mecanismo y el país.</div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+          <button class="btn" data-act="copiarPromptIA">📋 Copiar el prompt</button>
+          <button class="btn ghost" data-act="verPrompt">Ver lo que se copia</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="paso-item">
+      <div class="paso-num">2</div>
+      <div style="flex:1">
+        <b class="paso-tit">Pégalo en Arena</b>
+        <div class="hint-sm">Abre Arena, pega el prompt con Ctrl+V y elige ahí la IA que prefieras. Arena ya se encarga del resto: no tienes que decidir nada más.</div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+          <a class="btn ghost" href="https://arena.ai" target="_blank" rel="noopener" style="text-decoration:none">↗ Abrir Arena</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="paso-item" style="border-bottom:none">
+      <div class="paso-num">3</div>
+      <div style="flex:1">
+        <b class="paso-tit">Trae el resultado</b>
+        <div class="hint-sm">Copia la respuesta completa de Arena y pégala aquí. No importa si viene con texto alrededor:
+          el sistema busca el JSON y lo lee solo.</div>
+        <div style="margin-top:10px">
+          <textarea id="jsonIA" rows="6" placeholder="Pega aquí el resultado que te generó el prompt…" style="width:100%;resize:vertical"></textarea>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+          <button class="btn" data-act="cargarJSON">▸ Cargar y generar las piezas</button>
+          <button class="btn ghost" data-act="traerClip">📥 Traer del portapapeles</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="note" style="margin-top:16px;margin-bottom:0">
+      <b>Si Arena te responde con texto y no con datos</b>, escríbele: <i>«devuelve solo el JSON, sin explicación ni markdown»</i>.
+    </div>
+  </div>`;
+}
+
+/* --- expediente cargado --- */
+function vdInvDossier(c, r){
+  const b = c.brief;
+  const fecha = new Date(r.generado).toLocaleString('es', {day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
+  return `
+  <div class="card" style="border-color:#24402f">
+    <div class="row" style="margin-bottom:10px">
+      <div>
+        <h3 style="font-size:16px">Expediente de investigación</h3>
+        <div class="hint">${vdEsc(fecha)} · mercado ${vdEsc(r.pais)} · fuente: ${vdEsc(r.ia)}</div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn sm" data-act="tab" data-id="entrega">Ver la entrega →</button>
+      </div>
+    </div>
+    <p style="color:#e2e9f7;font-size:14.5px;margin:0">${vdEsc(r.resumen)}</p>
+  </div>
+
+  <div class="card">
+    <h3 style="font-size:16px;margin-bottom:12px">Consultas para la Biblioteca de Anuncios</h3>
+    <div class="grid g2">
+      ${(r.consultas||[]).map(x => `
+        <div style="border:1px solid #1b2233;border-radius:10px;padding:11px 13px;background:#0a0e18">
+          <div style="font-size:14px;color:#eef2fa">${vdEsc(x.q)}</div>
+          <div class="hint" style="margin:3px 0 9px">${vdEsc(x.tipo)}</div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">
+            <a class="tag" href="${x.ads}" target="_blank" rel="noopener" style="text-decoration:none">Meta Ads ↗</a>
+            <a class="tag" href="${x.tiktok}" target="_blank" rel="noopener" style="text-decoration:none">TikTok ↗</a>
+            <a class="tag" href="${x.instagram}" target="_blank" rel="noopener" style="text-decoration:none">IG ↗</a>
+            <a class="tag" href="${x.youtube}" target="_blank" rel="noopener" style="text-decoration:none">YouTube ↗</a>
+          </div>
+        </div>`).join('')}
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="font-size:16px;margin-bottom:12px">Ángulos detectados</h3>
+    <div class="tw"><table>
+      <thead><tr><th>Ángulo</th><th>Por qué funciona aquí</th><th>Fuerza</th></tr></thead>
+      <tbody>${(r.angulos||[]).map(a => `<tr>
+        <td><b>${vdEsc(a.angulo)}</b></td>
+        <td style="color:#c2ccdf">${vdEsc(a.razon)}</td>
+        <td><span class="pill ${a.fuerza>=80?'pA':a.fuerza>=65?'pB':'pC'}">${a.fuerza}</span></td>
+      </tr>`).join('')}</tbody>
+    </table></div>
+  </div>`;
+}
+
+/* --- datos que llegaron en el JSON (solo lectura) --- */
+function vdInvDatos(c){
+  const ads = c.ads || [], vir = c.viral || [], rev = c.rev || [], kws = c.kws || [];
+  if(!ads.length && !vir.length && !rev.length && !kws.length) return '';
+
+  const tblAds = ads.length ? `
+  <div class="card">
+    <div class="row" style="margin-bottom:12px">
+      <div><h3 style="font-size:16px">Anuncios del mercado</h3>
+        <div class="hint">${ads.length} anuncios · los que Arena encontró en la Biblioteca de Anuncios.
+          Los marcados <b>[VERIFICADO]</b> cuentan como evidencia real y suben el IC.</div></div>
+    </div>
+    <div class="tw"><table>
+      <thead><tr><th>Página</th><th>País</th><th>Días activo</th><th>Variantes</th><th>Objetivo</th><th>Formato</th><th>Ángulo</th></tr></thead>
+      <tbody>${ads.map(a => `<tr>
+        <td><b>${vdEsc(a.pagina)}</b></td><td>${vdEsc(a.pais)}</td>
+        <td class="num">${VD_N(a.dias)}</td><td class="num">${VD_N(a.variantes)}</td>
+        <td>${vdEsc(a.objetivo)}</td><td>${vdEsc(a.formato)}</td><td>${vdEsc(a.angulo)}</td>
+      </tr>`).join('')}</tbody>
+    </table></div>
+  </div>` : '';
+
+  const tblVir = vir.length ? `
+  <div class="card">
+    <h3 style="font-size:16px;margin-bottom:12px">Radar de contenido viral</h3>
+    <div class="tw"><table>
+      <thead><tr><th>Red</th><th>Cuenta</th><th>Vistas</th><th>Likes</th><th>Ángulo</th><th>ER</th><th>Viral</th></tr></thead>
+      <tbody>${vir.map(v => `<tr>
+        <td>${vdEsc(v.red)}</td><td>${vdEsc(v.cuenta)}</td>
+        <td class="num">${VD_N(v.views)}</td><td class="num">${VD_N(v.likes)}</td>
+        <td>${vdEsc(v.angulo)}</td>
+        <td class="num">${(vdErPct(v)||0).toFixed(2)}%</td>
+        <td><span class="pill ${vdViralScore(v)>=75?'pA':vdViralScore(v)>=50?'pB':'pD'}">${vdViralScore(v)}</span></td>
+      </tr>`).join('')}</tbody>
+    </table></div>
+  </div>` : '';
+
+  const revs = rev.length ? `
+  <div class="card">
+    <h3 style="font-size:16px;margin-bottom:12px">Ingeniería inversa</h3>
+    ${rev.map((x,i) => `
+      <div style="border:1px solid #1b2233;border-radius:10px;padding:12px 14px;margin-bottom:10px;background:#0a0e18">
+        <b style="color:#f2d78a;font-size:13.5px">${vdEsc(x.cuenta || ('Análisis '+(i+1)))}</b>
+        <div class="hint-sm" style="margin-top:6px">
+          <b>Gancho:</b> ${vdEsc(x.gancho)}<br>
+          <b>Promesa:</b> ${vdEsc(x.promesa)} · <b>Mecanismo:</b> ${vdEsc(x.mecanismo)}<br>
+          <b>Prueba:</b> ${vdEsc(x.prueba)}<br>
+          <b>Objeciones que derriba:</b> ${vdEsc(x.objeciones)}<br>
+          <b>CTA:</b> ${vdEsc(x.cta)} · <b>Formato:</b> ${vdEsc(x.formato)}<br>
+          <b>Por qué funciona:</b> ${vdEsc(x.porque)}
+        </div>
+      </div>`).join('')}
+  </div>` : '';
+
+  const tblKw = kws.length ? `
+  <div class="card">
+    <h3 style="font-size:16px;margin-bottom:12px">Términos de búsqueda</h3>
+    <div class="tw"><table>
+      <thead><tr><th>Término</th><th>Fuente</th><th>Intención</th><th>Se usa en</th><th>Comprobar</th></tr></thead>
+      <tbody>${kws.map(k => `<tr>
+        <td>${vdEsc(k.termino)}</td><td><span class="tag">${vdEsc(k.fuente)}</span></td>
+        <td>${vdEsc(k.intencion)}</td><td>${vdEsc(k.uso)}</td>
+        <td><a class="tag" href="${vdLinkGoogle(k.termino)}" target="_blank" rel="noopener" style="text-decoration:none">Google ↗</a></td>
+      </tr>`).join('')}</tbody>
+    </table></div>
+  </div>` : '';
+
+  return tblAds + tblKw + tblVir + revs;
+}
+
+/* --- pantalla de investigación en curso --- */
+function vdLoadingView(){
+  const c = vdDB.cliente(vdApp.clienteId);
+  const nombre = c ? c.nombre : 'tu cliente';
+  return `
+  <div style="max-width:660px;margin:34px auto">
+    <h1 class="page">Investigando el mercado…</h1>
+    <div class="sub">Construyendo el expediente de <b>${vdEsc(nombre)}</b>. Esto normalmente son 3 horas de trabajo manual.</div>
+    <div class="card" style="margin-top:20px">
+      ${VD_STAGES.map((s,i) => `<div class="stage" id="stage${i}">
+        <div class="dot">${i+1}</div>
+        <div><b>${s[1]}</b><span>${s[2]}</span></div>
+      </div>`).join('')}
+      <div class="bar" style="margin-top:16px"><i id="loadBar" style="width:0%"></i></div>
+    </div>
+    <div class="hint">Al terminar se generan las 7 piezas y pasas directo a la entrega.</div>
+  </div>`;
+}
+
+const VD_STAGES = [
+  ['E1','Leyendo el briefing','Normalizando nicho, país, categoría y restricciones.'],
+  ['E2','Construyendo consultas','Armando las búsquedas para la Biblioteca de Anuncios de Meta.'],
+  ['E3','Mapeando el lenguaje','Términos de búsqueda, intención y fuente de cada uno.'],
+  ['E4','Detectando ángulos','Cruzando el briefing con los patrones que funcionan en este nicho.'],
+  ['E5','Preparando la verificación','Enlaces directos a Meta, TikTok, Instagram y YouTube.'],
+  ['E6','Armando las 7 piezas','Generando el lote con su procedencia y su Índice de Confianza.']
+];
+
+/* ---------------- TAB ENTREGA ---------------- */
+function vdPieceCard(p, c){
+  const sub = p.sub;
+  const row = (l,v) => `<div class="icrow"><span>${l}</span><div class="bar"><i style="width:${VD_clamp(v,0,100)}%"></i></div><b>${v}</b></div>`;
+  return `
+  <details class="piece" ${p.rank===1?'open':''}>
+    <summary class="phead">
+      <span class="ic ${p.banda}">${p.ic}</span>
+      <span class="ptitle">
+        <b>#${p.rank} · ${vdEsc(p.angulo)} · ${vdEsc(p.formato)}</b>
+        <span class="m">${vdEsc(p.conciencia)} · banda ${p.banda} · IC ${p.fuente}</span>
+        <span style="display:block;margin-top:6px">
+          <span class="tag">${p.tier==='A'?'Ancla':p.tier==='B'?'Adaptación':'Disruptiva'}</span>
+          <span class="tag">Compliance ${vdEsc(p.comp.nivel)}</span>
+        </span>
+        <span class="abrir">Dale clic para abrir la pieza completa <span class="f">▾</span></span>
+      </span>
+    </summary>
+    <div class="pbody">
+      <div class="hook"><b>Gancho principal</b>${vdEsc(p.ganchos[0])}</div>
+      <div class="hook"><b>Gancho alterno 1</b>${vdEsc(p.ganchos[1])}</div>
+      <div class="hook"><b>Gancho alterno 2</b>${vdEsc(p.ganchos[2])}</div>
+      <div class="kit">
+        <div class="kitbox full"><b>Copy / descripción</b>${vdEsc(p.copy)}</div>
+        <div class="kitbox full"><b>Guion completo · ${vdEsc(p.formato)}</b>${vdGuionHTML(p)}</div>
+        <div class="kitbox"><b>CTA de acción</b>${vdEsc(p.ctas[0])}</div>
+        <div class="kitbox"><b>CTA de baja fricción</b>${vdEsc(p.ctas[1])}</div>
+        <div class="kitbox"><b>Prompt de imagen</b>${vdEsc(p.img)}</div>
+        <div class="kitbox"><b>Prompt de video</b>${vdEsc(p.vid)}</div>
+        <div class="kitbox"><b>Prueba a usar</b>${vdEsc(p.prueba)}</div>
+        <div class="kitbox"><b>Hipótesis</b>${vdEsc(p.hip)}</div>
+        <div class="kitbox full"><b>Métrica y umbral de corte</b>${vdEsc(p.metrica)}</div>
+        <div class="kitbox full" style="border-color:${p.comp.nivel==='Alto'?'#4b2029':'#1b2233'}"><b>Compliance ${vdEsc(p.comp.nivel)}</b>${vdEsc(p.comp.nota)}</div>
+      </div>
+      ${vdProcedencia(p, c)}
+      <div class="evi"><b>Evidencia (${p.porIA && p.fuente === 'estimada' ? 'propuesta por IA' : p.fuente}):</b> ${p.referencias} anuncios verificados y ${p.virales} contenidos vinculados a este ángulo.</div>
+      <div class="icbreak">
+        ${row('Longevidad · 30%', sub.EV)}
+        ${row('Escalado · 20%', sub.ES)}
+        ${row('Orgánico · 20%', sub.EO)}
+        ${row('Tu prueba · 15%', sub.CP)}
+        ${row('Encaje · 15%', sub.EN)}
+        ${p.pens.length ? p.pens.map(x=>`<div class="pen">${x.v} · ${x.m}</div>`).join('') : '<div style="color:#5ee9a8;font-size:11px;margin-top:4px">Sin penalizaciones</div>'}
+        <div style="color:#5f6b86;font-size:11px;margin-top:5px">Base ${p.bruto} ${p.pens.length?'− '+Math.abs(p.pens.reduce((s,x)=>s+x.v,0))+' = ':''}<b style="color:#eceff7">${p.ic}</b> / 100</div>
+      </div>
+    </div>
+  </details>`;
+}
+
+function vdTabEntrega(c){
+  const p = c.piezas || [];
+  if(!p.length){
+    return `<div class="empty">
+      <b>Todavía no hay entrega</b>
+      Genera el lote con el briefing actual. Si aún no registraste anuncios en la investigación,
+      las piezas se crean igual pero con <b>IC estimado</b>.
+      <div style="margin-top:16px">
+        <button class="btn" data-act="generar">Generar 7 piezas</button>
+        <button class="btn ghost" data-act="tab" data-id="inv" style="margin-left:8px">Ir a la investigación</button>
+      </div>
+    </div>`;
+  }
+
+  const exito = vdCondicionesExito(c);
+  const a = p.filter(x=>x.banda==='A').length;
+  return `${vdCardExito(exito)}` + `
+  <div class="row no-print">
+    <div>
+      <h2 style="font-size:18px">Entrega: ${p.length} piezas</h2>
+      <div class="sub">IC promedio ${vdICPromedio(p)} · ${a} en banda A · ordenadas de mayor a menor probabilidad</div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn" data-act="imprimir">Imprimir / PDF</button>
+      <button class="btn ghost sm" data-act="copiarMD">Copiar Markdown</button>
+      <button class="btn ghost sm" data-act="descargarJSON">JSON</button>
+      ${p.length<14?`<button class="btn ghost sm" data-act="ampliar">Ampliar a 14</button>`:''}
+      <button class="btn ghost sm" data-act="generar">Regenerar</button>
+    </div>
+  </div>
+
+  <div class="card no-print">
+    <div class="row" style="margin-bottom:0">
+      <div><b>${vdEsc(c.nombre)}</b> · ${vdEsc(c.brief.producto)} · ${vdEsc(c.brief.pais)} · objetivo ${vdEsc(c.brief.objetivo)}</div>
+      <div class="hint">Generado con ${vdEsc(c.ia)}</div>
+    </div>
+  </div>
+
+  ${vdCardIC()}
+
+  ${p.map(x => vdPieceCard(x, c)).join('')}
+
+  <div class="note no-print">
+    <b>Cómo subir el IC de este lote:</b> las piezas marcadas como <b>estimada</b> llevan un descuento conservador del 15%
+    porque todavía no hay anuncios de ese ángulo cargados en la investigación. En cuanto el JSON traiga anuncios reales
+    del ángulo, el IC pasa a <b>parcial</b> o <b>verificada</b> y sube solo. Arriba tienes «¿Qué es el IC?» si quieres el detalle.
+  </div>
+
+  <div class="note no-print">El documento se imprime con el botón <b>Imprimir / PDF</b>: la barra superior y los botones no salen,
+  solo la entrega. Sirve para enviarla tal cual al cliente.</div>
+
+`;
+}
+
+/* ---------------- PROCEDENCIA (de dónde salió cada pieza) ---------------- */
+function vdProcedencia(p, c){
+  const b = c.brief || {};
+  const r = c.research;
+  const ang = r ? (r.angulos||[]).find(a => a.angulo === p.angulo) : null;
+  const kw  = r ? ((r.kws||[]).find(k => k.uso === 'Gancho') || (r.kws||[])[0]) : null;
+  const cons = r ? (r.consultas||[])[0] : null;
+  const adsAng = (c.ads||[]).filter(a => (a.angulo||'') === p.angulo);
+
+  const links = [];
+  if(kw) links.push(`<a class="tag" href="${vdLinkAdLibrary(kw.termino, b.pais)}" target="_blank" rel="noopener" style="text-decoration:none">Meta Ads ↗</a>`);
+  if(cons) links.push(`<a class="tag" href="${cons.tiktok}" target="_blank" rel="noopener" style="text-decoration:none">TikTok ↗</a>`);
+  if(kw) links.push(`<a class="tag" href="${vdLinkGoogle(kw.termino)}" target="_blank" rel="noopener" style="text-decoration:none">Google ↗</a>`);
+
+  const verif = adsAng.filter(a => a.origen !== 'ia');
+  const prop  = adsAng.filter(a => a.origen === 'ia');
+  let estado;
+  if(verif.length){
+    estado = `<b style="color:#5ee9a8">Verificada</b> con ${verif.length} anuncio(s) registrado(s): ` +
+      verif.map(a => `${vdEsc(a.pagina||'—')} (${VD_N(a.dias)} días, ${VD_N(a.variantes)} variantes)`).join(' · ');
+  } else if(prop.length){
+    estado = `<b style="color:#f2cf6a">Propuesta por IA, sin verificar</b>: ` +
+      prop.map(a => vdEsc(a.pagina||'—')).join(' · ') +
+      `. Abre los enlaces y confirma en la Biblioteca de Anuncios antes de dar esta pieza por buena.`;
+  } else {
+    estado = `<b style="color:#f2cf6a">Estimada</b>: todavía no registraste un anuncio de este ángulo. Abre los enlaces,
+      filtra por <b>Activos</b> y busca anuncios con 30+ días; luego anótalo en «Registra lo que confirmes».`;
+  }
+
+  return `
+  <div class="evi" style="border-left-color:#7fb7d8;background:#0b1622">
+    <b>De dónde salió esta pieza</b>
+    <div style="margin-top:6px;line-height:1.7">
+      <b>Ángulo:</b> ${vdEsc(p.angulo)}${ang ? ' — ' + vdEsc(ang.razon) : ''}<br>
+      ${kw ? `<b>Término que la origina:</b> «${vdEsc(kw.termino)}» (${vdEsc(kw.fuente)}, ${vdEsc(kw.intencion)})<br>` : ''}
+      <b>Estado de la evidencia:</b> ${estado}<br>
+      <b>Formato:</b> ${vdEsc(p.formato)} · <b>Nivel de conciencia:</b> ${vdEsc(p.conciencia)}<br>
+      ${links.length ? `<b>Comprobar ahora:</b> ${links.join(' ')}` : '<b>Comprobar:</b> ejecuta la investigación automática para tener los enlaces.'}
+    </div>
+  </div>`;
+}
+
+/* ============================================================
+   CENTRO DE CONEXIONES
+   Cada usuario conecta sus cuentas en su propio navegador.
+   ============================================================ */
+function vdViewConfig(){
+  const conns = vdIAConn.conexiones;
+  const conectadas = conns.length;
+
+  const cards = conns.map(c => {
+    const p = vdIAProv(c.prov) || { nombre:c.prov };
+    const estado = c.estado === 'ok'
+      ? '<span class="pill pA">conectada</span>'
+      : c.estado === 'error' ? '<span class="pill pD">error</span>' : '<span class="pill pC">sin probar</span>';
+    const usada = VD_IA_SECCIONES.filter(x => vdIAConn.activa[x[0]] === c.id).map(x => x[1]);
+    return `
+    <div class="card" style="background:#0c1119;margin-bottom:10px">
+      <div class="row">
+        <div>
+          <b style="font-size:14px">${vdEsc(c.etiqueta)}</b> ${estado}
+          <div class="hint">${vdEsc(p.nombre)} · modelo <b>${vdEsc(c.modelo)}</b>
+            · llave ${vdEsc(c.llave.slice(0,6))}…${vdEsc(c.llave.slice(-4))}</div>
+          ${usada.length ? `<div class="hint" style="color:#e3b23c">Se usa en: ${usada.join(', ')}</div>` : ''}
+          ${c.error ? `<div class="hint" style="color:#f0a0a4">${vdEsc(c.error)}</div>` : ''}
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap">
+          <button class="btn ghost sm" data-act="iaProbar" data-id="${c.id}">Probar</button>
+          <button class="btn danger sm" data-act="iaBorrar" data-id="${c.id}">Quitar</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  const opts = id => conns.map(c => `<option value="${c.id}" ${id===c.id?'selected':''}>${vdEsc(c.etiqueta)}</option>`).join('');
+
+  return `
+  <div class="crumb"><a href="#" data-act="home" style="color:#8d99b5;text-decoration:none">Clientes</a> &nbsp;/&nbsp; Conexiones</div>
+
+  <div class="card">
+    <div class="row" style="margin-bottom:6px">
+      <div><h2 style="font-size:19px;margin:0">Tus conexiones</h2>
+      <div class="hint" style="max-width:70ch;margin-top:6px">
+        Cada persona conecta <b>su propia cuenta</b> en <b>su propio navegador</b>. Las llaves se guardan solo en este equipo
+        y nunca se envían a ningún servidor nuestro: van directo a la API del proveedor que elijas.
+        Si te quedas sin saldo o quieres comparar, añade otra y cámbiala cuando quieras.
+      </div></div>
+      <span class="chip">${conectadas} conectada${conectadas===1?'':'s'}</span>
+    </div>
+    ${cards || `<div class="note" style="margin-top:12px">Todavía no hay ninguna IA conectada. Sin conexión, la app usa su <b>motor local</b>:
+      genera consultas, términos y ángulos desde el briefing, pero no redacta ni investiga con un modelo.</div>`}
+  </div>
+
+  <div class="card">
+    <h3 style="font-size:15px;margin-bottom:14px">Conectar una IA</h3>
+    <div class="grid g3">
+      <div class="field"><label>Proveedor</label>
+        <select id="iaProv" data-cambio="iaProv">
+          ${VD_PROVEEDORES.map(p => `<option value="${p.id}">${vdEsc(p.nombre)}</option>`).join('')}
+        </select>
+      </div>
+      <div class="field"><label>Modelo</label>
+        <input id="iaModel" placeholder="gpt-5" value="${vdEsc(VD_PROVEEDORES[0].modelos[0])}">
+      </div>
+      <div class="field"><label>Nombre para ti (opcional)</label>
+        <input id="iaEtiqueta" placeholder="Mi cuenta de OpenAI">
+      </div>
+      <div class="field" style="grid-column:1/-1"><label>Llave de API</label>
+        <input id="iaKey" type="password" placeholder="sk-…" autocomplete="off">
+        <div class="hint" id="iaAyuda">Consigue tu llave en ${vdEsc(VD_PROVEEDORES[0].alta)} · ${vdEsc(VD_PROVEEDORES[0].nota)}</div>
+      </div>
+      <div class="field" style="grid-column:1/-1" id="iaBaseWrap" hidden>
+        <label>URL base de la API</label>
+        <input id="iaBase" placeholder="https://tu-servidor/v1/chat/completions">
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">
+      <button class="btn" data-act="iaConectar">Conectar y probar</button>
+      <button class="btn ghost" data-act="verSeguridad">¿Es seguro esto?</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="font-size:15px;margin-bottom:6px">Qué IA usa cada sección</h3>
+    <div class="hint" style="margin-bottom:14px">Puedes usar una IA distinta en cada parte. Si una se queda sin saldo, cambias solo esa.</div>
+    <div class="grid g3">
+      ${VD_IA_SECCIONES.map(([k, nom, desc]) => `
+        <div class="field"><label>${nom}</label>
+          <select data-cambio="iaAsignar" data-seccion="${k}">
+            <option value="">Motor local (sin IA)</option>
+            ${opts(vdIAConn.activa[k])}
+          </select>
+          <div class="hint">${desc}</div>
+        </div>`).join('')}
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="font-size:15px;margin-bottom:6px">Comparar dos IA</h3>
+    <div class="hint" style="margin-bottom:14px">Lanza la misma tarea en las dos y mira las respuestas lado a lado. Sirve para elegir con criterio, no por fama.</div>
+    ${conns.length >= 2 ? `
+      <div class="grid g3" style="align-items:end">
+        <div class="field"><label>IA A</label><select id="cmpA">${opts(conns[0].id)}</select></div>
+        <div class="field"><label>IA B</label><select id="cmpB">${opts(conns[1].id)}</select></div>
+        <div class="field"><button class="btn ghost" data-act="iaComparar">Comparar con el briefing actual</button></div>
+      </div>
+      ${vdApp.cmp ? `<div class="grid g2" style="margin-top:14px">${vdApp.cmp.map(r => `
+        <div class="card" style="background:#0c1119">
+          <div class="row"><b>${vdEsc(r.nombre)}</b><span class="hint">${r.ms} ms</span></div>
+          <div style="font-size:12.5px;color:#c3ccdd;white-space:pre-wrap;max-height:280px;overflow:auto;margin-top:8px">${vdEsc(r.texto)}</div>
+        </div>`).join('')}</div>` : ''}
+    ` : `<div class="note">Necesitas al menos dos conexiones para comparar.</div>`}
+  </div>
+
+  <div class="note bad">
+    <b>Si usas esto en un equipo compartido:</b> cualquiera que abra este navegador puede ver tus llaves. Usa una llave con límite de gasto,
+    revócala cuando termines, y no conectes cuentas en computadoras ajenas.
+  </div>
+
+  <div style="margin-top:8px"><button class="btn ghost" data-act="home">← Volver a clientes</button></div>`;
+}
+
+/* ============================================================
+   Condiciones de éxito: lo que decide si estas piezas funcionan
+   ============================================================ */
+function vdCondicionesExito(c){
+  const b = c.brief || {};
+  const piezas = c.piezas || [];
+  const items = [];
+  const presu = Number(String(b.precio||'').replace(/[^0-9]/g,'')) || 0;
+  const diario = Number(b.presupuesto) || 0;
+
+  /* 1 · presupuesto mínimo para tener datos */
+  if(diario && diario < 10){
+    items.push(['bad', 'Presupuesto insuficiente para aprender',
+      `Con $${diario}/día no vas a juntar datos en 7 días: necesitas al menos $10–15/día por conjunto. Con menos, el sistema de Meta no sale de la fase de aprendizaje y cualquier lectura es ruido.`]);
+  } else if(diario){
+    items.push(['ok', 'Presupuesto con margen para leer resultados',
+      `$${diario}/día te da una lectura real alrededor del día 4. Decide con 3–5 días de datos, no con 12 horas.`]);
+  } else {
+    items.push(['warn', 'Falta el presupuesto en el briefing',
+      'Sin presupuesto declarado no se puede calcular cuántas conversiones necesitas para decidir. Complétalo en el briefing.']);
+  }
+
+  /* 2 · una variable por vez */
+  items.push(['ok', 'Un ángulo por anuncio, no siete a la vez',
+    'Estas 7 piezas no se publican juntas: entran 2 o 3 en paralelo para poder atribuir el resultado. Si lanzas todo, no sabrás qué funcionó.']);
+
+  /* 3 · prueba real */
+  if(!(b.prueba||[]).length){
+    items.push(['bad', 'Sin prueba no hay venta',
+      'No declaraste testimonios, fotos ni demostración. Las piezas de prueba social y testimonio van a caer: consigue el activo antes de gastar.']);
+  } else {
+    items.push(['ok', 'Prueba disponible declarada',
+      'Usa el activo en las piezas de Prueba social y Testimonio. La prueba es lo que sostiene la promesa cuando el público no te conoce.']);
+  }
+
+  /* 4 · la oferta primero */
+  if(!String(b.oferta||'').trim() && !String(b.promesa||'').trim()){
+    items.push(['bad', 'Sin oferta clara no hay CTR',
+      'No hay promesa ni oferta definida. El anuncio es el 20%; la oferta es el 80% del resultado.']);
+  } else {
+    items.push(['ok', 'La oferta está definida',
+      'El anuncio solo amplifica la oferta. Si la oferta no se entiende en 5 segundos, ningún gancho la salva.']);
+  }
+
+  /* 5 · compliance */
+  const comp = vdCompliance(c);
+  if(comp.pen){
+    items.push(['bad', `Compliance ${comp.nivel.toLowerCase()}`,
+      comp.nota || 'Hay afirmaciones de salud, dinero o garantías que Meta puede rechazar o limitar. Revisa el texto antes de publicar.']);
+  } else {
+    items.push(['ok', 'Texto publicable sin riesgo evidente',
+      'No detecté afirmaciones de resultado garantizado ni categorías sensibles. Aun así, revisa las políticas de tu sector.']);
+  }
+
+  /* 6 · regla de corte */
+  items.push(['ok', 'Regla de corte decidida antes de publicar',
+    'Día 3: Hook Rate < 20% o CTR < 0,8% → se corta. Sin regla escrita, el dinero se va en piezas que no rinden y nadie decide.']);
+
+  /* 7 · medición */
+  items.push(['ok', 'Mide contra el costo por resultado, no contra los likes',
+    'La única métrica que decide es el costo por venta o por lead. Si no la estás mirando, el IC más alto del lote no significa nada.']);
+
+  const malos = items.filter(i => i[0] === 'bad').length;
+  return { items, malos, ganadores: piezas.filter(p => p.ic >= 70).length };
+}
+
+function vdCardExito(ex){
+  const color = ex.malos ? '#f0a0a4' : '#5ee9a8';
+  return `
+  <div class="card" style="border-color:${ex.malos ? '#4b2029' : '#24402f'};margin-bottom:14px">
+    <div class="row" style="margin-bottom:10px">
+      <div>
+        <h3 style="font-size:15px">Antes de publicar</h3>
+        <div class="hint">Lo que decide si estas piezas dan resultado. ${ex.malos ? '<b style="color:#f0a0a4">'+ex.malos+' punto(s) crítico(s)</b>' : '<b style="color:#5ee9a8">todo en orden</b>'}</div>
+      </div>
+    </div>
+    ${ex.items.map(([estado, titulo, texto]) => `
+      <div style="display:flex;gap:10px;padding:9px 0;border-bottom:1px solid #171d2c">
+        <div style="flex:none;width:8px;height:8px;border-radius:50%;margin-top:6px;background:${
+          estado==='ok'?'#5ee9a8':estado==='warn'?'#f2cf6a':'#f0a0a4'}"></div>
+        <div><b style="font-size:13px">${vdEsc(titulo)}</b>
+          <div style="font-size:12.5px;color:#94a0bb;line-height:1.6">${vdEsc(texto)}</div></div>
+      </div>`).join('')}
+  </div>`;
+}
+
+/* ============================================================
+   FLUJO GUIADO · 5 pasos
+   ============================================================ */
+function vdPasos(c){
+  const b = c.brief || {};
+  const core = ['producto','avatar','dolor','promesa'].filter(k => String(b[k]||'').trim()).length;
+  return [
+    { n:1, icono:'📝', titulo:'Briefing',     tab:'brief',   hecho:core===4,
+      texto:'Cuéntale el negocio: qué vende, a quién, la promesa y la prueba.' },
+    { n:2, icono:'🔍', titulo:'Investigación', tab:'inv',     hecho:!!c.research,
+      texto:'Copia el prompt, tráelo de Arena y carga el resultado.' },
+    { n:3, icono:'📦', titulo:'Entrega',       tab:'entrega', hecho:(c.piezas||[]).length>0,
+      texto:'Revisa las 7 piezas, su procedencia y el PDF.' }
+  ];
+}
+
+function vdStepper(c){
+  const pasos = vdPasos(c);
+  const actual = pasos.find(p => !p.hecho) || pasos[pasos.length-1];
+  return `
+  <div class="stepper">
+    ${pasos.map(p => `
+      <button class="paso ${p.hecho?'hecho':''} ${p.n===actual.n && !p.hecho?'actual':''}"
+              data-act="tab" data-id="${p.tab}" title="${vdEsc(p.texto)}">
+        <span class="num">${p.hecho?'✓':p.icono}</span>
+        <span class="lbl">${vdEsc(p.titulo)}</span>
+      </button>`).join('<span class="flecha">→</span>')}
+  </div>`;
+}
+
+/* ---------- bienvenida ---------- */
+function vdViewBienvenida(){
+  return `
+  <div style="max-width:760px;margin:10px auto">
+    <div style="text-align:center;margin-bottom:26px">
+      <h1 class="page" style="margin-bottom:6px">AdForge</h1>
+      <div class="sub" style="letter-spacing:.14em;text-transform:uppercase;font-size:12.5px;color:#cf9f42">Content &amp; Ads Studio</div>
+      <div class="sub">Del briefing a las piezas listas para publicar. Contenido y anuncios, en el mismo taller.</div>
+    </div>
+
+    <div class="card">
+      ${[
+        ['Briefing','Cuéntale el negocio: qué vende, a quién, con qué promesa y qué prueba tiene. Cinco minutos.'],
+        ['Investigación','Copias el prompt, lo pegas en Arena y traes el resultado. La app lo lee y arma el expediente del mercado.'],
+        ['Entrega','Recibes 7 anuncios con gancho, copy, guion, prompts, procedencia y su Índice de Confianza.']
+      ].map(([t,d],i)=>`
+        <div style="display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #171d2c">
+          <div style="flex:none;width:26px;height:26px;border-radius:50%;border:1px solid #e3b23c;color:#e3b23c;
+                      display:grid;place-items:center;font-size:12px;font-weight:700">${i+1}</div>
+          <div><b style="font-size:13.5px">${t}</b>
+            <div style="font-size:12.5px;color:#94a0bb;line-height:1.6;margin-top:2px">${d}</div></div>
+        </div>`).join('')}
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">
+        <button class="btn" data-act="nuevo">Empezar con un cliente</button>
+        <button class="btn ghost" data-act="demo">Ver una demo ya hecha</button>
+      </div>
+      <div class="hint" style="margin-top:12px">No necesitas instalar nada, ni crear cuenta, ni conectar llaves.</div>
+    </div>
+  </div>`;
+}
+
+/* ---------- guía completa (botón ?) ---------- */
+function vdViewGuia(){
+  return `
+  <div class="crumb"><a href="#" data-act="home" style="color:#8d99b5;text-decoration:none">Clientes</a> &nbsp;/&nbsp; Guía</div>
+  <div class="card">
+    <h2 style="font-size:20px;margin:0 0 6px">Cómo se usa, paso por paso</h2>
+    <div class="hint" style="margin-bottom:18px">Tres pasos. Si te pierdes, vuelve a esta página.</div>
+
+    <div class="paso-item">
+      <div class="paso-num">1</div>
+      <div><b class="paso-tit">📝 Briefing</b>
+        <div class="hint-sm">Pestaña <b>Briefing</b>. Rellena el nombre del cliente, qué vende, el precio, el país, a quién le habla,
+        el dolor, el deseo, la promesa y el mecanismo. Los campos con ★ suben el Índice de Confianza: no los dejes vacíos.</div>
+      </div>
+    </div>
+
+    <div class="paso-item">
+      <div class="paso-num">2</div>
+      <div><b class="paso-tit">🔍 Investigación</b>
+        <div class="hint-sm" style="margin-bottom:8px">Pestaña <b>Investigación</b>. Tres movimientos:</div>
+        <ol class="pasos-lista">
+          <li>Pulsa <b>📋 Copiar el prompt</b>. Lleva dentro todo el briefing.</li>
+          <li>Pulsa <b>↗ Abrir Arena</b>, pega el prompt y elige ahí la IA que quieras.</li>
+          <li>Copia la respuesta y pégala en el cuadro. Pulsa <b>▸ Cargar y generar las piezas</b>.</li>
+        </ol>
+        <div class="hint-sm" style="margin-top:8px">Si Arena responde con texto y no con datos, pídele: <i>«devuelve solo el JSON»</i>.</div>
+      </div>
+    </div>
+
+    <div class="paso-item" style="border-bottom:none">
+      <div class="paso-num">3</div>
+      <div><b class="paso-tit">📦 Entrega</b>
+        <div class="hint-sm">Recibes <b>7 piezas</b> ordenadas por probabilidad. Dale clic a cualquiera para verla completa:
+        ganchos, copy, guion, CTAs, prompts de imagen y video, métrica de corte, procedencia y desglose del IC.
+        Con <b>Imprimir / PDF</b> salen todas abiertas y con todos los detalles.</div>
+      </div>
+    </div>
+
+    <div class="note" style="margin-top:18px">
+      <b>¿Qué es el IC?</b> Una nota de 0 a 100 sobre la probabilidad de que la pieza funcione.
+      En la pestaña Entrega tienes la explicación completa con las bandas A/B/C/D y cómo subirlo.
+    </div>
+    <div class="note">
+      <b>Tus datos viven en este navegador.</b> Nada se sube a internet. Usa <b>Exportar base (.json)</b> una vez por semana como respaldo.
+    </div>
+
+    <div style="margin-top:18px"><button class="btn ghost" data-act="home">← Volver a clientes</button></div>
+  </div>`;
+}
+
+
+/* ============================================================
+   ¿Qué es el IC?
+   ============================================================ */
+function vdCardIC(){
+  return `
+  <details class="resumen" style="margin-bottom:14px">
+    <summary>❓ ¿Qué es el IC y por qué importa?<span class="f">▾</span></summary>
+    <div style="padding:14px 2px 4px;font-size:14px;color:#dfe6f3;line-height:1.75">
+      <p style="margin:0 0 10px">El <b>IC (Índice de Confianza)</b> es una nota de <b>0 a 100</b> que estima la probabilidad de que esa pieza funcione,
+      calculada con lo que sabemos del mercado y de tu negocio. No es una promesa: es un orden de prioridad para decidir qué producir primero.</p>
+      <div class="tw" style="margin:12px 0"><table>
+        <thead><tr><th>Banda</th><th>Rango</th><th>Qué significa</th><th>Qué hacer</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pill pA">A</span></td><td>85 – 100</td><td>Lo más probable del lote</td><td>Producir primero</td></tr>
+          <tr><td><span class="pill pB">B</span></td><td>70 – 84</td><td>Sólida, con margen de mejora</td><td>Segunda tanda</td></tr>
+          <tr><td><span class="pill pC">C</span></td><td>55 – 69</td><td>Apuesta: enseña algo</td><td>Probar con presupuesto bajo</td></tr>
+          <tr><td><span class="pill pD">D</span></td><td>0 – 54</td><td>Poco probable hoy</td><td>Guardar para más adelante</td></tr>
+        </tbody>
+      </table></div>
+      <p style="margin:0 0 8px"><b>Cómo se calcula</b> (los cinco ingredientes):</p>
+      <ul class="pasos-lista" style="margin-bottom:12px">
+        <li><b>Longevidad · 30%</b>: cuántos días llevan activos los anuncios de ese ángulo. Si un anuncio lleva 60 días, está funcionando.</li>
+        <li><b>Escalado · 20%</b>: cuántas variantes del mismo copy tienen. Muchas variantes = el anuncio rinde.</li>
+        <li><b>Orgánico · 20%</b>: el rendimiento del contenido viral del mismo ángulo en TikTok, Instagram o YouTube.</li>
+        <li><b>Tu prueba · 15%</b>: si tienes testimonios, fotos o demostración. Sin prueba, la promesa no se sostiene.</li>
+        <li><b>Encaje · 15%</b>: que el briefing esté completo (los campos ★).</li>
+      </ul>
+      <p style="margin:0"><b>Qué lo baja:</b> afirmaciones riesgosas para Meta, ofertas sin garantía y datos ★ sin rellenar.
+      <b>Qué lo sube:</b> registrar anuncios reales del ángulo y completar el briefing. Por eso una pieza <i>estimada</i> siempre vale menos que una <i>verificada</i>.</p>
+    </div>
+  </details>`;
+}
+
+/* ---------- pintar el guion como línea de tiempo ---------- */
+function vdGuionHTML(p){
+  const t = vdTokens({brief: p.brief || {}, id: p.id});
+  const g = p.guionCompleto;
+  if(!g) return (p.guion||[]).map(l=>vdEsc(l)).join('<br>');
+  return `
+  <div class="guionmeta">
+    <span class="tag">${vdEsc(g.duracion)}</span>
+    <span class="tag">${vdEsc(g.estructura)}</span>
+  </div>
+  <div class="guiontabla">
+    ${g.bloques.map(b => `
+      <div class="gbloque">
+        <div class="gt">
+          <b>${vdEsc(b.t)}</b>
+          <span>${vdEsc(b.nombre)}</span>
+        </div>
+        <div class="gc">
+          <div><em>Qué se ve</em>${vdEsc(b.ve)}</div>
+          ${b.dice && b.dice !== '—' ? `<div><em>Qué se dice</em>${/^[«"]/.test(b.dice) ? vdEsc(b.dice) : '«' + vdEsc(b.dice) + '»'}</div>` : ''}
+          ${b.texto && b.texto !== '—' ? `<div><em>Texto en pantalla</em>${vdEsc(b.texto)}</div>` : ''}
+        </div>
+      </div>`).join('')}
+  </div>
+  <div class="guioncols">
+    <div>
+      <b class="gtitle">Cómo grabarlo</b>
+      <ul>${g.produccion.map(x=>`<li>${vdEsc(x)}</li>`).join('')}</ul>
+    </div>
+    <div>
+      <b class="gtitle">Qué evitar</b>
+      <ul class="evitar">${g.errores.map(x=>`<li>${vdEsc(x)}</li>`).join('')}</ul>
+    </div>
+  </div>`;
+}
+
+</script>
+<script>
+/* ============================================================
+   Router, eventos e inicio
+   ============================================================ */
+const vdApp = { view:'home', clienteId:null, tab:'brief', working:false, stage:0, cmp:null, ocupado:false, mantenerScroll:true };
+let vdTimers = [];
+
+/* ---------- utilidades ---------- */
+/* re-render llevando la vista al inicio (navegación) */
+function vdIrA(){
+  vdApp.mantenerScroll = false;
+  vdRender();
+  vdApp.mantenerScroll = true;
+  try{ window.scrollTo(0, 0); }catch(e){}
+}
+
+function vdToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('on');
+  clearTimeout(t._tm); t._tm = setTimeout(()=>t.classList.remove('on'), 2000);
+}
+function vdCopy(txt){
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(()=>vdToast('Copiado')).catch(()=>vdModal(txt));
+  } else vdModal(txt);
+}
+function vdModal(txt){
+  const d = document.createElement('div');
+  d.className = 'modal';
+  d.innerHTML = `<div class="in">
+    <div style="font-size:13px;color:#94a0bb;margin-bottom:8px">Selecciona y copia (Ctrl/Cmd + C):</div>
+    <textarea></textarea>
+    <div style="text-align:right;margin-top:10px"><button class="btn ghost sm" data-close>Cerrar</button></div>
+  </div>`;
+  document.body.appendChild(d);
+  const ta = d.querySelector('textarea') || d.querySelector('input[type=text]'); ta.value = txt;
+  setTimeout(()=>{ ta.focus(); ta.select(); }, 40);
+  d.querySelector('[data-close]').onclick = ()=>d.remove();
+  d.addEventListener('click', e => { if(e.target === d) d.remove(); });
+}
+/* aplica una respuesta en texto (con o sin JSON) al cliente */
+function vdAplicarInvestigacion(c, txt){
+  const data = vdParseJSON(txt);
+  if(!data){ vdToast('No encontré un JSON válido en ese texto'); return vdModal(txt); }
+  const res = vdFusionarInvestigacion(c, data, 'Arena');
+  c.research = res.research;
+  c.kws = (res.research.kws || []).map(k => ({...k}));
+  if(res.anuncios.length) c.ads = res.anuncios;
+  if(res.viral && res.viral.length) c.viral = res.viral;
+  if(res.reversa && res.reversa.length) c.rev = res.reversa;
+  c.piezas = vdBuildPieces(c, 7);
+  c.estado = 'entregado';
+  vdDB.save();
+  vdApp.tab = 'entrega';
+  vdRender();
+  vdToast('Investigación incorporada · 7 piezas generadas');
+}
+
+/* abre la IA elegida con el prompt ya escrito */
+const VD_DESTINOS = [
+  { id:'chatgpt',    nombre:'ChatGPT',    url:'https://chatgpt.com/?q=' },
+  { id:'claude',     nombre:'Claude',     url:'https://claude.ai/new?q=' },
+  { id:'perplexity', nombre:'Perplexity', url:'https://www.perplexity.ai/search?q=' },
+  { id:'gemini',     nombre:'Gemini',     url:'https://gemini.google.com/app' },
+  { id:'copilot',    nombre:'Copilot',    url:'https://copilot.microsoft.com/?q=' },
+  { id:'grok',       nombre:'Grok',       url:'https://grok.com/?q=' }
+];
+
+function vdAbrirIA(c){
+  const prompt = vdPromptInvestigacion(c);
+  const d = document.createElement('div');
+  d.className = 'modal';
+  d.innerHTML = `<div class="in" style="max-width:640px">
+    <h3 style="margin:0 0 6px;font-size:15px">Abrir la investigación en una IA</h3>
+    <div style="font-size:12.5px;color:#8d99b5;margin-bottom:14px;line-height:1.6">
+      Se abre en otra pestaña con el prompt <b>ya escrito</b>: solo pulsas enviar. Cuando te responda, copias su respuesta
+      y vuelves aquí a pulsar <b>Traer del portapapeles</b>. Sin llaves, sin contraseñas.
+    </div>
+    <div class="grid g2">
+      ${VD_DESTINOS.map(x => `<button class="btn ghost" data-destino="${x.id}" style="justify-content:flex-start">${x.nombre} ↗</button>`).join('')}
+    </div>
+    <div class="note" style="margin-top:14px">El prompt también queda copiado en tu portapapeles, por si la IA no admite el texto en la dirección.</div>
+    <div style="text-align:right;margin-top:10px"><button class="btn ghost sm" data-close>Cerrar</button></div>
+  </div>`;
+  document.body.appendChild(d);
+  d.addEventListener('click', e => {
+    if(e.target === d) d.remove();
+    const btn = e.target.closest('[data-destino]');
+    if(btn){
+      const dest = VD_DESTINOS.find(x => x.id === btn.dataset.destino);
+      vdCopy(prompt);
+      const full = dest.url + encodeURIComponent(prompt);
+      window.open(dest.url.endsWith('=app') ? dest.url : full, '_blank', 'noopener');
+      d.remove();
+      vdToast('Prompt copiado · pégalo si no aparece escrito');
+    }
+    if(e.target.closest('[data-close]')) d.remove();
+  });
+}
+
+function vdModalPegar(titulo, ayuda, cb, simple){
+  const d = document.createElement('div');
+  d.className = 'modal';
+  d.innerHTML = `<div class="in" style="max-width:760px">
+    <h3 style="margin:0 0 6px;font-size:15px">${titulo}</h3>
+    <div style="font-size:12.5px;color:#8d99b5;margin-bottom:10px;line-height:1.6">${ayuda}</div>
+    ${simple ? '<input type="text" style="width:100%" placeholder="">'
+             : '<textarea style="min-height:240px;font-family:ui-monospace,Menlo,monospace;font-size:13px"></textarea>'}
+    <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:12px">
+      <button class="btn ghost sm" data-close>Cancelar</button>
+      <button class="btn sm" data-ok>Procesar</button>
+    </div>
+  </div>`;
+  document.body.appendChild(d);
+  const ta = d.querySelector('textarea') || d.querySelector('input[type=text]');
+  setTimeout(()=>ta.focus(), 40);
+  d.querySelector('[data-close]').onclick = ()=>d.remove();
+  d.addEventListener('click', e => { if(e.target === d) d.remove(); });
+  d.querySelector('[data-ok]').onclick = ()=>{ const v = ta.value.trim(); if(!v) return; d.remove(); cb(v); };
+}
+function vdDownload(nombre, contenido, tipo){
+  try{
+    const blob = new Blob([contenido], {type: tipo || 'application/json'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = nombre;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=>URL.revokeObjectURL(a.href), 1000);
+    vdToast('Archivo descargado');
+  }catch(e){ vdModal(contenido); }
+}
+
+/* ---------- render ---------- */
+function vdRender(){
+  const app = document.getElementById('app');
+  const y = (typeof window !== 'undefined' && window.scrollY) || 0;
+  const conservar = vdApp.mantenerScroll !== false;
+  if(vdApp.working){ app.innerHTML = vdLoadingView(); return; }
+  if(vdApp.view === 'config'){ app.innerHTML = vdViewConfig(); return; }
+  if(vdApp.view === 'guia'){ app.innerHTML = vdViewGuia(); return; }
+  if(vdApp.view === 'bienvenida'){ app.innerHTML = vdViewBienvenida(); return; }
+  app.innerHTML = (vdApp.view === 'cliente') ? vdViewCliente() : vdViewHome();
+  if(conservar && y > 0 && window.scrollTo) window.scrollTo(0, y);
+  document.querySelectorAll('[data-nav]').forEach(b => {
+    b.classList.toggle('on', b.dataset.nav === (vdApp.view === 'cliente' ? 'clientes' : 'clientes'));
+  });
+  if(!vdDB.disponible){
+    const w = document.getElementById('warn');
+    if(w) w.style.display = 'block';
+  }
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+/* ---------- cliente actual ---------- */
+function vdActual(){ return vdDB.cliente(vdApp.clienteId); }
+
+/* ---------- eventos ---------- */
+document.addEventListener('input', e => {
+  const el = e.target;
+  const c = vdActual();
+  if(!c) return;
+
+  if(el.dataset.f){
+    const k = el.dataset.f;
+    if(k === 'ia') c.ia = el.value; else c.brief[k] = el.value;
+    c.actualizado = new Date().toISOString();
+    vdDB.save();
+    const bar = document.getElementById('reqBar');
+    const cnt = document.getElementById('reqCount');
+    if(bar && cnt){
+      const b = c.brief;
+      const done = [b.producto,b.precio,b.avatar,b.pais,b.promesa,b.objetivo,b.presupuesto]
+        .filter(x => String(x).trim()).length;
+      bar.style.width = Math.round(done/7*100) + '%';
+      cnt.textContent = done + '/7';
+    }
+  }
+
+  if(el.dataset.nombre){
+    c.nombre = el.value;
+    vdDB.save();
+  }
+
+  if(el.dataset.t){
+    const t = el.dataset.t, i = Number(el.dataset.i), k = el.dataset.k;
+    if(c[t] && c[t][i]){ c[t][i][k] = el.value; vdDB.save(); }
+  }
+});
+
+document.addEventListener('change', e => {
+  const el = e.target;
+  const c = vdActual();
+  if(!c) return;
+
+  if(el.dataset.cambio === 'iaProv'){
+    const p = vdIAProv(el.value);
+    const m = document.getElementById('iaModel');
+    if(p && m && p.modelos[0]) m.value = p.modelos[0];
+    const ayuda = document.getElementById('iaAyuda');
+    if(ayuda && p) ayuda.textContent = (p.alta ? 'Consigue tu llave en ' + p.alta + ' · ' : '') + (p.nota || '');
+    const wrap = document.getElementById('iaBaseWrap');
+    if(wrap) wrap.hidden = (el.value !== 'custom');
+    return;
+  }
+  if(el.dataset.cambio === 'iaAsignar'){
+    vdIAAsignar(el.dataset.seccion, el.value);
+    vdToast(el.value ? 'Asignada' : 'Usará el motor local');
+    return vdRender();
+  }
+  if(el.dataset.chk){
+    const arr = c.brief[el.dataset.chk] || [];
+    const v = el.dataset.v;
+    if(el.checked){ if(arr.indexOf(v) < 0) arr.push(v); }
+    else { const i = arr.indexOf(v); if(i > -1) arr.splice(i, 1); }
+    c.brief[el.dataset.chk] = arr;
+    vdDB.save();
+    vdRender();
+  } else if(el.dataset.f && el.tagName === 'SELECT'){
+    vdDB.save();
+    vdRender();
+  } else if(el.dataset.t && el.tagName === 'SELECT'){
+    vdDB.save();
+    vdRender();
+  }
+});
+
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-act]');
+  if(!b) return;
+  const act = b.dataset.act;
+  const c = vdActual();
+
+  if(act === 'home'){ e.preventDefault(); vdApp.view = 'home'; vdApp.clienteId = null; return vdIrA(); }
+
+  if(act === 'nuevo'){
+    try{ localStorage.setItem('vd_vio_guia','1'); }catch(e){}
+    const nuevo = vdDB.crear('Cliente nuevo');
+    vdApp.view = 'cliente'; vdApp.clienteId = nuevo.id; vdApp.tab = 'brief';
+    return vdRender();
+  }
+
+  if(act === 'demo'){ try{ localStorage.setItem('vd_vio_guia','1'); }catch(e){}
+    const d = vdDemo(); vdApp.view = 'cliente'; vdApp.clienteId = d.id; vdApp.tab = 'entrega'; return vdRender(); }
+
+  if(act === 'renombrar'){
+    const cl = vdDB.cliente(b.dataset.id); if(!cl) return;
+    return vdModalPegar('Nombre del cliente', 'Escribe el nombre y pulsa Procesar.', val => {
+      cl.nombre = val.slice(0, 60); vdDB.save(); vdRender(); vdToast('Nombre actualizado');
+    }, true);
+  }
+
+  if(act === 'borrarCli'){
+    const cl = vdDB.cliente(b.dataset.id); if(!cl) return;
+    if(!confirm('¿Eliminar «' + cl.nombre + '»? No se puede deshacer.')) return;
+    vdDB.eliminar(b.dataset.id); vdToast('Cliente eliminado'); return vdRender();
+  }
+
+  if(act === 'abrir'){ vdApp.view = 'cliente'; vdApp.clienteId = b.dataset.id; vdApp.tab = 'brief';
+    return vdIrA(); }
+
+  if(act === 'tab'){ vdApp.tab = b.dataset.id; return vdIrA(); }
+
+  if(act === 'config'){ vdApp.view = 'config'; return vdIrA(); }
+  if(act === 'guia'){ vdApp.view = 'guia'; return vdIrA(); }
+  if(act === 'zoomMas' || act === 'zoomMenos'){
+    const y = window.scrollY || 0;
+    vdZoomCambiar(act === 'zoomMas' ? 1 : -1);
+    setTimeout(()=>window.scrollTo(0, y), 30);
+    return;
+  }
+
+  if(act === 'publicar'){ const cl = vdActual(); if(cl){ cl.publicado = true; vdDB.save(); vdToast('Lote marcado como publicado'); } return vdRender(); }
+  if(act === 'despublicar'){ const cl = vdActual(); if(cl){ cl.publicado = false; vdDB.save(); } return vdRender(); }
+
+  if(act === 'saltarGuia'){ try{ localStorage.setItem('vd_vio_guia','1'); }catch(e){} vdApp.view = 'home'; return vdRender(); }
+
+  if(act === 'investigar'){ return vdInvestigarAhora(); }
+
+  /* ---------- conexiones de IA ---------- */
+  if(act === 'iaConectar'){
+    const prov = (document.getElementById('iaProv')||{}).value;
+    const llave = ((document.getElementById('iaKey')||{}).value || '').trim();
+    const modelo = ((document.getElementById('iaModel')||{}).value || '').trim();
+    const etiq = ((document.getElementById('iaEtiqueta')||{}).value || '').trim();
+    const base = ((document.getElementById('iaBase')||{}).value || '').trim();
+    if(!llave){ vdToast('Pega la llave de API'); return; }
+    const conn = vdIAConectar(prov, llave, modelo, etiq, base);
+    vdToast('Probando la conexión…');
+    vdIAProbar(conn).then(r => {
+      vdRender();
+      vdToast(r.ok ? 'Conexión verificada' : 'No respondió: revisa la llave');
+    });
+    return;
+  }
+
+  if(act === 'iaProbar'){
+    const conn = vdIAGet(b.dataset.id); if(!conn) return;
+    vdToast('Probando…');
+    return vdIAProbar(conn).then(r => { vdRender(); vdToast(r.ok ? 'Conexión verificada' : 'Falló: ' + r.texto.slice(0,60)); });
+  }
+
+  if(act === 'iaBorrar'){ vdIABorrar(b.dataset.id); vdToast('Conexión eliminada'); return vdRender(); }
+
+  if(act === 'iaComparar'){
+    const a = (document.getElementById('cmpA')||{}).value;
+    const bb = (document.getElementById('cmpB')||{}).value;
+    if(!a || !bb) return;
+    const cli = vdDB.clientes()[0];
+    const prompt = cli ? vdPromptInvestigacion(cli) : 'Escribe 5 ganchos de Meta Ads para un negocio local de servicios.';
+    vdToast('Consultando las dos IA…');
+    return vdIAComparar(prompt, [a, bb]).then(rs => { vdApp.cmp = rs; vdRender(); });
+  }
+
+  if(act === 'verSeguridad'){
+    return vdModal('SEGURIDAD DE LAS LLAVES\n\n' +
+      '· Las llaves se guardan solo en este navegador (localStorage). No pasan por ningún servidor de Visión Digital.\n' +
+      '· Van directo a la API del proveedor que elijas (OpenAI, Anthropic, Google u OpenRouter).\n' +
+      '· Cada persona que use la app conecta su propia cuenta y paga su propio consumo.\n' +
+      '· En un equipo compartido, cualquiera puede verlas: usa llaves con límite de gasto y revócalas al terminar.\n' +
+      '· Si abres el archivo con doble clic (file://), algunos proveedores rechazan la llamada por seguridad. En ese caso usa el servidor local (start-local) o la versión publicada en GitHub.');
+  }
+
+
+
+
+  if(act === 'copiarPromptIA'){ if(c) return vdCopy(vdPromptInvestigacion(c)); }
+
+  if(act === 'abrirIA'){ if(c) return vdAbrirIA(c); }
+
+  if(act === 'traerClip'){
+    if(!c) return;
+    if(!(navigator.clipboard && navigator.clipboard.readText)){
+      vdToast('Este navegador no permite leer el portapapeles');
+      return vdModalPegar('Pega la respuesta', 'Copia la respuesta de la IA y pégala aquí.', txt => vdAplicarInvestigacion(c, txt));
+    }
+    vdToast('Leyendo el portapapeles…');
+    return navigator.clipboard.readText()
+      .then(txt => vdAplicarInvestigacion(c, txt))
+      .catch(() => vdModalPegar('No pude leer el portapapeles',
+        'Tu navegador pidió permiso o lo bloqueó. Pega la respuesta a mano aquí:', txt => vdAplicarInvestigacion(c, txt)));
+  }
+
+  if(act === 'cargarJSON'){
+    if(!c) return;
+    const ta = document.getElementById('jsonIA');
+    const txt = ta && ta.value ? ta.value.trim() : '';
+    if(!txt){ vdToast('Pega primero el resultado de Arena'); if(ta && ta.focus) ta.focus(); return; }
+    return vdAplicarInvestigacion(c, txt);
+  }
+
+  if(act === 'verPrompt'){
+    if(!c) return;
+    return vdModal(vdPromptInvestigacion(c));
+  }
+
+  if(act === 'pegarIA'){
+    if(!c) return;
+    return vdModalPegar('Pegar la respuesta de una IA',
+      'Copia el prompt con el botón <b>Copiar prompt para IA</b>, pégalo en Arena, ChatGPT, Claude o Gemini, y trae aquí la respuesta completa. ' +
+      'El sistema busca el JSON dentro del texto, aunque venga con explicaciones o en un bloque de código.',
+      txt => vdAplicarInvestigacion(c, txt));
+  }
+
+  if(act === 'generar'){
+    if(!c) return;
+    const faltan = ['producto','precio','avatar','promesa'].filter(k => !String(c.brief[k]||'').trim());
+    if(faltan.length){ vdToast('Completa el briefing: faltan ' + faltan.length + ' datos clave'); vdApp.tab = 'brief'; return vdRender(); }
+    c.piezas = vdBuildPieces(c, 7);
+    c.estado = 'entregado';
+    vdDB.save();
+    vdApp.tab = 'entrega';
+    vdRender();
+    return vdToast('7 piezas generadas');
+  }
+
+  if(act === 'ampliar'){
+    if(!c) return;
+    c.piezas = vdBuildPieces(c, 14);
+    vdDB.save(); vdRender(); return vdToast('Ampliado a 14 piezas');
+  }
+
+  if(act === 'imprimir'){
+    const cerradas = [...document.querySelectorAll('details.piece')].map(d => ({ d, abierta: d.open }));
+    cerradas.forEach(x => { x.d.open = true; });
+    setTimeout(() => { window.print(); setTimeout(() => cerradas.forEach(x => { x.d.open = x.abierta; }), 400); }, 120);
+    return;
+  }
+
+  if(act === 'copiarMD'){ if(c) return vdCopy(vdMarkdown(c)); }
+
+  if(act === 'descargarJSON'){
+    if(c) return vdDownload('entrega-' + vdSlug(c.nombre) + '.json', JSON.stringify(c, null, 2));
+  }
+
+  if(act === 'exportar'){
+    return vdDownload('base-vision-digital-' + new Date().toISOString().slice(0,10) + '.json', vdDB.exportar());
+  }
+
+  if(act === 'importar'){
+    const inp = document.createElement('input');
+    inp.type = 'file'; inp.accept = '.json,application/json';
+    inp.onchange = () => {
+      const f = inp.files[0]; if(!f) return;
+      const r = new FileReader();
+      r.onload = () => {
+        try{
+          const n = vdDB.importar(r.result);
+          vdToast('Base importada: ' + n + ' clientes');
+          vdApp.view = 'home'; vdApp.clienteId = null;
+          vdRender();
+        }catch(err){ alert('No se pudo importar: ' + err.message); }
+      };
+      r.readAsText(f);
+    };
+    inp.click();
+    return;
+  }
+
+  if(act === 'eliminar'){
+    if(!c) return;
+    if(b.dataset.armed === '1'){
+      vdDB.eliminar(c.id);
+      vdApp.view = 'home'; vdApp.clienteId = null;
+      vdRender(); return vdToast('Cliente eliminado');
+    }
+    b.dataset.armed = '1'; b.textContent = '¿Seguro?';
+    setTimeout(()=>{ b.dataset.armed = '0'; b.textContent = 'Eliminar'; }, 3000);
+    return;
+  }
+
+  if(act === 'duplicar'){
+    if(!c) return;
+    const d = vdDB.duplicar(c.id);
+    vdApp.clienteId = d.id; vdApp.tab = 'brief';
+    vdRender(); return vdToast('Cliente duplicado');
+  }
+
+  if(act === 'add'){
+    if(!c) return;
+    const t = b.dataset.t;
+    if(t === 'ads') c.ads.push({pagina:'',pais:'',dias:'',variantes:1,objetivo:'Ventas',formato:'Video UGC',angulo:'Resultado rápido',viral:0,fit:3});
+    if(t === 'kws') c.kws.push({termino:'',fuente:'Google',intencion:'Comercial',uso:'Gancho'});
+    if(t === 'viral') c.viral.push({red:'TikTok',cuenta:'',views:'',likes:'',comments:'',shares:'',saves:'',dias:'',angulo:'Identidad',formato:'Video UGC'});
+    if(t === 'rev') c.rev.push({url:'',gancho:'',arquetipo:'',promesa:'',mecanismo:'',prueba:'',objeciones:'',estructura:'',cta:'',formato:'',porque:''});
+    vdDB.save(); return vdRender();
+  }
+
+  if(act === 'del'){
+    if(!c) return;
+    c[b.dataset.t].splice(Number(b.dataset.i), 1);
+    vdDB.save(); return vdRender();
+  }
+});
+
+/* ---------- investigación automática ---------- */
+function vdInvestigarAhora(){
+  const c = vdActual(); if(!c) return;
+  const faltan = ['producto','precio','avatar','promesa'].filter(k => !String(c.brief[k]||'').trim());
+  if(faltan.length >= 3){
+    vdToast('Completa el briefing primero: faltan ' + faltan.length + ' datos clave');
+    vdApp.tab = 'brief'; return vdRender();
+  }
+
+  vdTimers.forEach(clearTimeout); vdTimers = [];
+  vdApp.working = true; vdApp.stage = 0;
+  vdRender();
+
+  const dur = [800, 1000, 950, 1050, 900, 850];
+  let acc = 0;
+  VD_STAGES.forEach((_, i) => {
+    vdTimers.push(setTimeout(() => {
+      document.querySelectorAll('.stage').forEach((el, j) => {
+        el.classList.toggle('on', j === i);
+        el.classList.toggle('done', j < i);
+      });
+      const bar = document.getElementById('loadBar');
+      if(bar) bar.style.width = Math.round((i+1)/VD_STAGES.length*100) + '%';
+    }, acc));
+    acc += dur[i];
+  });
+
+  const conn = vdIADe('investigacion');
+
+  vdTimers.push(setTimeout(async () => {
+    if(conn){
+      const bar = document.getElementById('loadBar');
+      if(bar) bar.style.width = '85%';
+      let resultado = null;
+      try{ resultado = await vdInvestigarConIA(c, conn); }
+      catch(e){ resultado = { ok:false, error: e.message }; }
+
+      if(resultado && resultado.ok){
+        c.research = resultado.research;
+        if(!(c.kws||[]).length) c.kws = c.research.kws.slice(0, 12).map(k => ({...k}));
+        if(resultado.anuncios.length) c.ads = resultado.anuncios;
+        if(resultado.viral && resultado.viral.length) c.viral = resultado.viral;
+        if(resultado.reversa && resultado.reversa.length) c.rev = resultado.reversa;
+      } else {
+        c.research = vdInvestigar(c);
+        c.research.aviso = resultado.error || 'La IA no devolvió un formato válido: se usó el motor local.';
+        if(!(c.kws||[]).length) c.kws = c.research.kws.slice(0, 12).map(k => ({...k}));
+      }
+    } else {
+      c.research = vdInvestigar(c);
+      if(!(c.kws||[]).length) c.kws = c.research.kws.slice(0, 12).map(k => ({...k}));
+    }
+
+    c.piezas = vdBuildPieces(c, 7);
+    c.estado = 'entregado';
+    vdDB.save();
+    vdApp.working = false;
+    vdApp.tab = 'entrega';
+    vdRender();
+    vdToast(conn ? 'Investigación con ' + conn.etiqueta + ' · 7 piezas' : 'Investigación lista · 7 piezas');
+  }, acc + 350));
+}
+
+/* ---------- tamaño de letra ---------- */
+const VD_ZOOM = [1, 1.12, 1.25, 1.4];
+function vdZoomActual(){
+  try{ return Number(localStorage.getItem('vd_zoom_v1')) || 0; }catch(e){ return 0; }
+}
+function vdZoomAplicar(){
+  const i = vdZoomActual();
+  try{
+    if(document.documentElement) document.documentElement.style.fontSize = '';
+    if(document.body) document.body.style.zoom = VD_ZOOM[i] || 1;
+  }catch(e){}
+  const et = document.getElementById('zoomNivel');
+  if(et) et.textContent = ['Normal','Grande','Muy grande','Enorme'][i] || 'Normal';
+}
+function vdZoomCambiar(delta){
+  let i = vdZoomActual() + delta;
+  if(i < 0) i = 0; if(i > VD_ZOOM.length - 1) i = VD_ZOOM.length - 1;
+  try{ localStorage.setItem('vd_zoom_v1', String(i)); }catch(e){}
+  vdZoomAplicar();
+  vdToast('Tamaño: ' + ['Normal','Grande','Muy grande','Enorme'][i]);
+}
+
+/* ---------- inicio ---------- */
+(function init(){
+  vdDB.load();
+  try{ if(!vdDB.clientes().length && !localStorage.getItem('vd_vio_guia')) vdApp.view = 'bienvenida'; }catch(e){}
+  vdIACargar();
+  vdZoomAplicar();
+  const logo = document.getElementById('logo');
+  if(logo) logo.src = VD_LOGO;
+  vdRender();
+})();
+
+</script>
+</body>
+</html>
